@@ -6,93 +6,140 @@ import { demoResume } from "../../lib/data";
 export default function index() {
   const resume = demoResume();
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>resume template</title>
-      </Head>
-      <main className={styles.main}>
-        <div class="flex align-middle justify-center bg-zinc-300 m-10">
-            <div class="container w-[210mm] h-[297mm] bg-white p-10 min-w-[210mm]">
-                <div class="h-auto pb-10 border-b-4">
-                    <div>
-                        <h1 class="text-4xl font-sans font-semibold">RUBEENA KHATUN</h1>
-                        <h1 class="text-sm text-gray-400 font-semibold">Programmer</h1>
-                    </div>
-                </div>
-                <div class="grid grid-cols-3 mt-10">
-                    <div class="border-r-4 pr-10">
-                        <div>
-                            <h1 class="text-2xl font-semibold">DETAILS</h1>
-                            <hr class="w-[15%] h-1 bg-black"></hr>
-                            <h1 class="text-sm font-semibold pt-5">ADDRESS</h1>
-                            <p class="text-sm text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, exercitationem.</p>
-                            <h1 class="text-sm font-semibold pt-4">PHONE</h1>
-                            <p class="text-sm text-gray-400">+91 8074206332</p>
-                            <h1 class="text-sm font-semibold pt-4">EMAIL</h1>
-                            <p class="text-sm text-gray-400">loremipsum@gmail.com</p>
-                            <h1 class="text-sm font-semibold pt-4">NATIONALITY</h1>
-                            <p class="text-sm text-gray-400">Indian</p>
-                        </div>
-                        <div class="">
-                            <h1 class="text-2xl font-semibold pt-7">SKILLS</h1>
-                            <hr class="w-[15%] h-1 bg-black"></hr>
-                            <h1 class="text-sm text-gray-800 pt-3">Lorem ipsum dolor sit amet.</h1>
-                            <h1>●●●●●</h1>
-                            <h1 class="text-sm text-gray-800 pt-3">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-                            <h1>●●●●●</h1>
-                            <h1 class="text-sm text-gray-800 pt-3">Lorem ipsum dolor sit amet.</h1>
-                            <h1>●●●●●</h1>
-                            <h1 class="text-sm text-gray-800 pt-3">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-                            <h1>●●●●●</h1>
-                            <h1 class="text-sm text-gray-800 pt-3">Lorem ipsum dolor sit amet.</h1>
-                            <h1>●●●●●</h1>
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-semibold pt-7">LANGUAGES</h1>
-                            <hr class="w-[15%] h-1 bg-black"></hr>
-                            <h1 class="text-sm text-gray-800 pt-3">English</h1>
-                            <h1>●●●●●</h1>
-                            <h1 class="text-sm text-gray-800 pt-3">French</h1>
-                            <h1>●●●●</h1>
-                        </div>
-                    </div>
-                    <div class="col-span-2 pl-10">
-                        <div>
-                            <h1 class="text-2xl font-semibold">PROFILE</h1>
-                            <hr class="w-[8%] h-1 bg-black"></hr>
-                            <p class="text-sm text-gray-400 py-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet consectetur aut voluptas expedita ipsam esse corporis saepe consequuntur qui dolorem possimus doloribus distinctio impedit maiores, quam officia id, et suscipit?</p>
-        
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-semibold pt-8 border-t-2">EMPLOYMENT HISTORY</h1>
-                            <hr class="w-[8%] h-1 bg-black"></hr>
-                            <span class="text-sm font-bold mt-8">Programmer</span><span class="text-sm text-gray-400 font-bold ml-[65%]">Hyderabad</span>
-                            <h1 class="text-xs py-2 font-semibold text-gray-400">Dec 2015 - Present</h1>
-                            <ul class="list-disc pl-10">
-                                <li class="text-sm text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis eius asperiores quaerat eveniet eos harum adipisci hic quidem error deleniti!</li>
-                                <li class="text-sm text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                                <li class="text-sm text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ipsam.</li>
-                                <li class="text-sm text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                            </ul>
-                            <span class="text-sm font-bold text-left">Programmer</span><span class="text-sm text-gray-400 font-bold ml-[68%]">Chennai</span>                  
-                            <h1 class="text-xs py-2 font-semibold text-gray-400">Feb 2004 - Sep 2015</h1>
-                            <ul class="list-disc pl-10">
-                                <li class="text-sm text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis eius asperiores quaerat eveniet eos harum adipisci hic quidem error deleniti!</li>
-                                <li class="text-sm text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                                <li class="text-sm text-gray-400 pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ipsam.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-semibold pt-8 border-t-2">EDUCATION</h1>
-                            <hr class="w-[8%] h-1 bg-black"></hr>
-                            <h1 class="text-sm font-bold pt-8">Lorem ipsum dolor sit amet consectetur.</h1>
-                            <h1 class="text-xs font-semibold py-2 text-gray-400">Aug 2001 - Jun 2004</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div className="flex align-middle justify-center bg-zinc-300">
+      <div className="container w-[210mm] h-[297mm] bg-white p-10 min-w-[210mm] m-10">
+        <div className="h-auto pb-10 border-b-4">
+          <div>
+            <h1 className="text-4xl font-sans font-semibold">
+              {resume.personal.firstName} {resume.personal.lastName}
+            </h1>
+            <h1 className="text-sm text-gray-400 font-semibold">
+              {resume.personal.role}
+            </h1>
+          </div>
         </div>
-      </main>
+        <div className="grid grid-cols-3 mt-10">
+          <div className="border-r-4 pr-10">
+            <div>
+              <h1 className="text-2xl font-semibold">DETAILS</h1>
+              <hr className="w-[15%] h-1 bg-black"></hr>
+              <h1 className="text-sm font-semibold pt-2">
+                DOB
+                <span className="text-sm text-gray-400">
+                  {" : "}
+                  {resume.personal.dob}
+                </span>
+              </h1>
+              <h1 className="text-sm font-semibold pt-2">
+                PHONE
+                <span className="text-sm text-gray-400">
+                  {" : "}
+                  {resume.personal.phone}
+                </span>
+              </h1>
+              <h1 className="text-sm font-semibold pt-2">
+                EMAIL
+                <span className="text-sm text-gray-400">
+                  {" : "}
+                  {resume.personal.email}
+                </span>
+              </h1>
+              {resume.social.map((item) => (
+                <div className="text-sm font-semibold pt-2">
+                  <a href="{item.url}">{item.network}</a>
+                </div>
+              ))}
+            </div>
+            <div>
+              <h1 className="text-2xl font-semibold pt-5">EDUCATION</h1>
+              <hr className="w-[15%] h-1 bg-black"></hr>
+              {resume.education.map((item) => (
+                <div className="my-5">
+                  <span className="text-sm font-bold">{item.institution}</span>
+                  <p className="text-xs py-1 font-semibold text-gray-400">
+                    {item.fieldOfStudy}{" "}
+                    <span className="text-xs font-semibold text-gray-400">
+                      ({item.startDate} to {item.endDate})
+                    </span>
+                  </p>
+                </div>
+              ))}
+            </div>
+            <div className="">
+              <h1 className="text-2xl font-semibold pt-2">SKILLS</h1>
+              <hr className="w-[15%] h-1 bg-black"></hr>
+              {resume.skills.map((item) => (
+                <div>
+                  <h1 className="text-sm text-gray-800 pt-2">{item.name}</h1>
+                </div>
+              ))}
+            </div>
+            <div>
+              <h1 className="text-2xl font-semibold pt-5">HOBBIES</h1>
+              <hr className="w-[15%] h-1 bg-black"></hr>
+              {resume.hobbies.map((item) => (
+                <div>
+                  <h1 className="text-sm text-gray-800 pt-2">{item.name}</h1>
+                </div>
+              ))}
+            </div>
+            <div>
+              <h1 className="text-2xl font-semibold pt-5">LANGUAGES</h1>
+              <hr className="w-[15%] h-1 bg-black"></hr>
+              {resume.languages.map((item) => (
+                <div>
+                  <h1 className="text-sm text-gray-800 pt-2">{item.name}</h1>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="col-span-2 pl-10">
+            <div>
+              <h1 className="text-2xl font-semibold">PROFILE</h1>
+              <hr className="w-[8%] h-1 bg-black"></hr>
+              <p className="text-sm text-gray-400 py-5">{resume.objective}</p>
+            </div>
+            <div>
+              <h1 className="text-2xl font-semibold pt-5 border-t-2">
+                EMPLOYMENT HISTORY
+              </h1>
+              <hr className="w-[8%] h-1 bg-black"></hr>
+              {resume.work.map((item) => (
+                <div className="my-5">
+                  <span className="text-sm font-bold mt-10">
+                    {item.company}
+                    {" - "}
+                    <span className="text-sm font-bold mt-10">
+                      {item.designation}
+                    </span>
+                  </span>
+                  <p className="text-xs py-1 font-semibold text-gray-400">
+                    ({item.from} to {item.to})
+                  </p>
+                  <p class="text-sm text-gray-400">{item.summary.data}</p>
+                </div>
+              ))}
+            </div>
+            <div>
+              <h1 className="text-2xl font-semibold pt-5 border-t-2">
+                PROJECTS
+              </h1>
+              <hr className="w-[8%] h-1 bg-black"></hr>
+              {resume.projects.map((item) => (
+                <div className="my-5">
+                  <span className="text-sm font-bold mt-10">
+                    <a href="{item.website}">{item.name}</a>
+                  </span>
+                  <p className="text-xs py-1 font-semibold text-gray-400">
+                    ({item.from} to {item.to})
+                  </p>
+                  <p class="text-sm text-gray-400">{item.summary.data}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
