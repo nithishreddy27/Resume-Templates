@@ -111,7 +111,7 @@ export default function index() {
                 </div>
               </div>
             </div>
-            <div className="col-span-2 p-4">
+            <div className="col-span-2 p-6">
               <h1 className="text-red-700 text-4xl font-">
                 {resume.personal.firstName} {resume.personal.lastName}
               </h1>
