@@ -13,8 +13,6 @@ export default function one() {
           </h1>
           <h1 className="mt-3">{resume.personal.role}</h1>
 
-<<<<<<< HEAD
-
           <div className="mt-5 mb-4 flex  justify-center align-middle">
             {
                 resume.social.map(item =>(
@@ -29,7 +27,7 @@ export default function one() {
         <div className="mt-56 mx-10 flex flex-col">
                 <h4 className="font-bold tracking-[4px]">EDUCATION</h4>
                 <hr className="w-[100%] h-1 bg-black my-2"/>
-=======
+
           <div className="mt-5 flex  justify-center align-middle">
             {resume.social.map((item) => (
               <div className="mx-5 mt-3">
@@ -51,8 +49,6 @@ export default function one() {
           <div className="mt-56 mx-10 flex flex-col">
             <h4 className="font-bold tracking-[4px]">EDUCATION</h4>
             <hr className="w-[100%] h-1 bg-black my-2" />
->>>>>>> 57f2dad3dc03f28870e270faa811e17640a8954e
-
             {resume.education.map((item) => (
               <div className="flex flex-col">
                 <span className="text-black font-semibold mt-4">
@@ -145,6 +141,7 @@ export default function one() {
             </>
           ))}
         </div>
+      </div>
       </div>
     </div>
   );
