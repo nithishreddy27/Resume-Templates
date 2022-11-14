@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <div className="bg-slate-200  p-10">
         <div className="bg-blue-100 w-[210mm] h-[297mm] overflow-auto drop-shadow-2xl mx-auto">
-          <div className="m-4 ">
+          <div className="m-4 mt-8">
             <div className="flex  space-x-3 ">
               <div className="w-[37%] bg-white rounded-md p-3 ">
                 {/* personal details */}
@@ -29,7 +29,7 @@ export default function Home() {
                     <div>
                       <div className=" pb-2 rounded-sm flex bg-blue-50">
                         {resume.social.map((item) => (
-                          <div className="mx-3 mt-2">
+                          <div className="mx-3 mt-2 justify-around">
                             <span>
                               <Link href={item.url}>
                                 <img
