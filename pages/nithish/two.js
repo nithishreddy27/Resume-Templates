@@ -100,22 +100,23 @@ export default function two() {
 
                    <h1 className='text-xl font-bold tracking-[1px] mt-5' >WORK</h1>
                    <hr className="h-[2px] bg-black my-1" />
-                   <div className='flex'>
-                    <div className='pt-2'>
-                        <div className='w-3 bg-black h-3 rounded-full opacity-60'></div>
-                        <div className='w-1 bg-black h-36 m-1'></div>
-                        <div className='w-3 bg-black h-3 rounded-full opacity-60'></div>
-                        <div className='w-1 bg-black h-24 m-1'></div>
-                    </div>
-                    <div className="ml-5 mt-1">
+
+
+                    <div className="ml-1 mt-1">
 
                             {
                                 resume.work.map(item=>(
-                                    <div className=''>
-                                        <p className='font-semibold'>{item.from.slice(0,4)} - {item.to.slice(0,4)}</p>
-                                        <p className='tracking-[2px] my-1'>{item.company}</p>
-                                        <p className='font-bold'>{item.designation}</p>
-                                        <p className='mb-4 text-sm'>{item.summary.data}</p>
+                                    <div className='flex'>
+                                        <div className='pt-1'>
+                                            <div className='w-3 bg-black h-3 rounded-full opacity-60'></div>
+                                            <div className='w-1 bg-black h-32 m-1'></div>
+                                        </div>
+                                        <div className='ml-5 mt-1'>
+                                            <p className='font-semibold'>{item.from.slice(0,4)} - {item.to.slice(0,4)}</p>
+                                            <p className='tracking-[2px] my-1'>{item.company}</p>
+                                            <p className='font-bold'>{item.designation}</p>
+                                            <p className='mb-4 text-sm'>{item.summary.data}</p>
+                                        </div>
                                     </div>
                                 ))
                             }
@@ -124,35 +125,31 @@ export default function two() {
 
 
                     
-                   </div>
+                   
                    <h1 className='text-xl font-bold tracking-[1px] mt-5' >EDUCACTION</h1>
                    <hr className="h-[2px] bg-black my-1" />
-                   <div className='flex'>
-                    <div className='pt-2'>
-                        <div className='w-3 bg-black h-3 rounded-full opacity-60'></div>
-                        <div className='w-1 bg-black h-36 m-1'></div>
-                        <div className='w-3 bg-black h-3 rounded-full opacity-60'></div>
-                        <div className='w-1 bg-black h-16 m-1'></div>
-                    </div>
-                    <div className="ml-5 mt-1">
+                    <div className="ml-1 mt-1">
 
                             {
                                 resume.education.map(item=>(
-                                    <div className=''>
+                                    <div className='flex'>
+                                        <div className='flex'>
+                                        <div className='pt-1'>
+                                            <div className='w-3 bg-black h-3 rounded-full opacity-60'></div>
+                                            <div className='w-1 bg-black h-28 m-1'></div>
+                                        </div>
+                                        <div className='ml-5 mt-1'>   
                                         <p className='font-semibold'>{item.startDate.slice(0,4)} - {item.endDate.slice(0,4)}</p>
                                         <p className='tracking-[2px]'>{item.institution}</p>
                                         <p className='font-bold'>{item.fieldOfStudy}</p>
                                         <p className=''>{item.typeOfDegree}</p>
                                         <p className='mb-4 font-semibold'>GPA-{item.gpa}</p>
+                                        </div>
+                                        </div>
                                     </div>
                                 ))
                             }
-
                     </div>
-
-
-                    
-                   </div>
                 </div>
 
         </div>
