@@ -13,27 +13,21 @@ export default function one() {
           </h1>
           <h1 className="mt-3">{resume.personal.role}</h1>
 
-          <div className="mt-5 flex  justify-center align-middle">
-            {resume.social.map((item) => (
-              <div className="mx-5 mt-3">
-                <span>
-                  <Link href={item.url}>
-                    <img
-                      src={"https://www." + item.network + ".com/favicon.ico"}
-                      alt=""
-                      srcset=""
-                      className="w-5 grayscale-[40%]"
-                    />
-                  </Link>
-                </span>
-              </div>
-            ))}
+
+          <div className="mt-5 mb-4 flex  justify-center align-middle">
+            {
+                resume.social.map(item =>(
+                    <div className="mx-5 mt-1">
+                        <span className=""><Link href={item.url}><img src={"https://www."+item.network+".com/favicon.ico"} className="w-5 grayscale-[40%] "/></Link></span>
+                    </div>
+                ))
+            }
           </div>
         </div>
-        <div className="w-[40%] bg-gray-100">
-          <div className="mt-56 mx-10 flex flex-col">
-            <h4 className="font-bold tracking-[4px]">EDUCATION</h4>
-            <hr className="w-[100%] h-1 bg-black my-2" />
+        <div className="w-[40%] bg-gray-200">
+        <div className="mt-56 mx-10 flex flex-col">
+                <h4 className="font-bold tracking-[4px]">EDUCATION</h4>
+                <hr className="w-[100%] h-1 bg-black my-2"/>
 
             {resume.education.map((item) => (
               <div className="flex flex-col">
