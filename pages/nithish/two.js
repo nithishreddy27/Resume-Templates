@@ -8,14 +8,14 @@ export default function two() {
   return (
     <>
         <div className="bg-gray-300 flex align-middle justify-center">
-      <div className="bg-slate-50 w-[210mm] h-[297mm] m-10 overflow-auto drop-shadow-2xl flex flex-row">
+      <div className="bg-slate-50 w-[210mm] h-[285mm] m-10 overflow-auto drop-shadow-2xl flex flex-row min-w-[210mm]">
 
         <div className=' w-[35%] bg-gray-200 p-6'>
 
             <div className='bg-slate-800 w-36 h-[200px] absolute top-0 left-0'>
                 <img src="https://randomuser.me/api/portraits/men/40.jpg" alt=""  className='w-36 h-36 mt-7 ml-10 border-8 border-white'/>
             </div>
-            <div className='mt-56'>
+            <div className='mt-48'>
                 <h1 className='text-2xl font-semibold tracking-[2px]' >CONTACT</h1>
                 <hr className="h-[2px] bg-black my-1" />
                 {
@@ -54,7 +54,7 @@ export default function two() {
                     ))
                 }
             </div>
-            <div className='mt-4'>
+            {/* <div className='mt-4'>
             <h1 className='text-2xl font-semibold tracking-[2px]' >HOBBIES</h1>
                 <hr className="h-[2px] bg-black my-1" />
                 {
@@ -62,7 +62,7 @@ export default function two() {
                         <p className='my-2'>{item.name}</p>
                     ))
                 }
-            </div>
+            </div> */}
             <div className='mt-4'>
             <h1 className='text-2xl font-semibold tracking-[2px]' >LANGUAGES</h1>
                 <hr className="h-[2px] bg-black my-1" />
@@ -93,7 +93,7 @@ export default function two() {
                     <h1 className='text-lg  tracking-[4px] mt-2'>{resume.personal.role}</h1>
                 </div>
 
-                <div className='mt-20'>
+                <div className='mt-12'>
                     <h1 className='text-xl font-bold tracking-[1px]' >OBJECTIVE</h1>
                    <hr className="h-[2px] bg-black my-1" />
                    <p className='text-sm'>{resume.objective}</p>
@@ -126,7 +126,7 @@ export default function two() {
 
                     
                    
-                   <h1 className='text-xl font-bold tracking-[1px] mt-5' >EDUCACTION</h1>
+                   <h1 className='text-xl font-bold tracking-[1px] mt-3' >EDUCACTION</h1>
                    <hr className="h-[2px] bg-black my-1" />
                     <div className="ml-1 mt-1">
 
