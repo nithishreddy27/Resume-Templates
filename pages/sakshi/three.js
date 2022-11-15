@@ -19,7 +19,7 @@ export default function three() {
                 <div className='first'>
                     <div className='w-[150mm] h-[150px] bg-black ml-[60mm] mt-[50px]'>
                         <div className='name text-white'>
-                            <h1 className='pl-[100px] pt-[20px] text-3xl font-bold'>{resume.personal.firstName}<span className='pl-4 font-medium'>{resume.personal.lastName}</span></h1>
+                            <h1 className='pl-[100px] pt-[20px] text-3xl font-bold text-white'>{resume.personal.firstName}<span className='pl-4 font-medium'>{resume.personal.lastName}</span></h1>
                             <h2 className='text-white pl-[100px] pt-2 text-xl'>{resume.personal.role}</h2>
                         </div>
                         <div className='pl-16 pt-2'>
