@@ -13,13 +13,18 @@ export default function index() {
       <div className="flex align-middle justify-center bg-zinc-400">
         <div className="container w-[210mm] h-[297mm] bg-white min-w-[210mm] m-10">
             <div className="grid grid-cols-3">
-                <div>
-                <img className="rounded-full p-5 w-40"
+            <div>
+                <div className="col-span-1 bg-gray-200 h-[100%] w-[95%]">
+                    <div>
+                        <img
+                    className="rounded-full w-[119px] ml-10 pt-3"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpl60g6oKVerEKPde2ClN4-6ASK4Ds4KzlM0Y1N-K_bCgOCMBYZ019WUgRLOfNAqyyhnY&usqp=CAU"
                     alt="ProfilePhoto"
                   />
+                    </div>
+               
                   <div>
-                    <h1 className="font-medium px-8 py-6 text-orange-800">Details</h1>
+                    <h1 className="font-medium px-8 py-6 text-orange-800 pt-4">Details</h1>
                     <h2 className=" font-medium px-8  text-black">Phone</h2>
                     <h6 className=" px-8 ">{resume.personal.phone}</h6>
                     <h2 className=" font-medium px-8  text-black">Email</h2>
@@ -64,18 +69,10 @@ export default function index() {
                     ))
                   }
                   </div>
-                  <div>
-                  <h1 className="font-medium px-8 py-2 text-orange-800 pt-10">Awards</h1>
-                  {
-                   resume.awards.map(item=>(
-                    <div>
-                        <li className="px-8">{item.name}</li>
-                    </div>
-                   ))
-                  }
+                 
                   </div>
                 </div>
-                <div className="col-span-2">
+                <div className="col-span-2 ">
                     <h1 className="pt-12 text-xl font-bold">{resume.personal.firstName} {resume.personal.lastName}</h1>
                     <h2 className="font-extralight pt-1">{resume.personal.role}</h2>
                     <div>
@@ -89,8 +86,8 @@ export default function index() {
                                 <div>
                                     <h1 className="font-medium ">{item.company}</h1>
                                     <h2 className="font-extralight text-xs">{item.from} - {item.to}</h2>
-                                    <li className="px-8 list-disc">{item.designation}</li>
-                                    <li className="px-8 list-disc">{item. website}</li>
+                                    <li className="ml-8 list-disc">{item.designation}</li>
+                                    <li className="ml-8 list-disc">{item. website}</li>
                                 </div>
                             ))
                         }
@@ -121,17 +118,7 @@ export default function index() {
                             ))
                         }
                     </div>
-                    <div>
-                        <h1 className="font-medium text-orange-800 pt-4">Awards</h1>
-                        {
-                            resume.awards.map(item=>(
-                                <div>
-                                    <h1 className="font-medium">{item.name}</h1>
-                                    <li className="px-8">{item.awarder}</li>
-                                </div>
-                            ))
-                        }
-                    </div>
+                   
                 </div>
             </div>
         </div>
