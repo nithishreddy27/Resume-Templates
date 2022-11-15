@@ -6,6 +6,7 @@ export default function one() {
         <h1>Sakshi's Resume</h1>
         <Link href="/sakshi/one" className='m-10 p-4'>First</Link>
         <Link href="/sakshi/two" className='m-10 p-4'>Second</Link>
+        <Link href="/sakshi/three" className='m-10 p-4'>Third</Link>
     </div>
   )
 }
