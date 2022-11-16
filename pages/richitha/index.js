@@ -28,6 +28,10 @@ export default function index() {
             <Link href="/richitha/four" className=" bg-gray-100  p-2">
               RESUME 4
             </Link>
+            <p className="bg-rose-100 rounded-md p-5"></p>
+            <Link href="/richitha/five" className=" bg-gray-100  p-2">
+              RESUME 5
+            </Link>
           </div>
         </div>
       </div>
