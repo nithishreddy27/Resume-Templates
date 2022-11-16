@@ -8,6 +8,7 @@ export default function index() {
       <Link href="skt/one" className='m-10 p-4'>first </Link>
       <Link href="skt/two" className='m-10 p-4'>second </Link>
       <Link href="skt/three" className='m-10 p-4'>third </Link>
+      <Link href="skt/four" className='m-10 p-4'>four </Link>
     </div>
   )
 }
