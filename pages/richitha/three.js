@@ -109,11 +109,11 @@ export default function index() {
                     <p className="font-semibold text-white ">
                       {item.institution} [{item.startDate} - {item.endDate}]
                     </p>
-                    <p>{item.fieldOfStudy}</p>
-                    <p>{item.typeOfDegree}</p>
-                    <p>{item.gpa}</p>
-                    <p>{item.summary.enabled}</p>
-                    <p>{item.enabled}</p>
+                    <p className="text-white">{item.fieldOfStudy}</p>
+                    <p className="text-white">{item.typeOfDegree}</p>
+                    <p className="text-white">{item.gpa}</p>
+                    <p className="text-white">{item.summary.enabled}</p>
+                    <p className="text-white">{item.enabled}</p>
                   </div>
                 ))}
               </div>
@@ -125,9 +125,11 @@ export default function index() {
                 {resume.projects.map((item) => (
                   <div className="p-1 text-white ">
                     <Link href={item.website}>
-                      <p className="font-bold  tracking-wider">{item.name}</p>
+                      <p className="font-bold  text-white tracking-wider">
+                        {item.name}
+                      </p>
                     </Link>
-                    <p className="ml-3">
+                    <p className="ml-3 text-white">
                       {item.from}- {item.to}
                     </p>
                     {/* <p>{item.summary.data}</p> */}
@@ -143,11 +145,11 @@ export default function index() {
                 <hr></hr>
                 {resume.certifications.map((item) => (
                   <div className="pt-4 text-white ">
-                    <p className="font-semibold">
+                    <p className="font-semibold  text-white">
                       {item.title} [{item.date}]
                     </p>
                     <p></p>
-                    <p>{item.issuer}</p>
+                    <p className=" text-white">{item.issuer}</p>
                     {/* <p>{item.summary.data}</p> */}
                     <p>{item.summary.enabled}</p>
                     <p>{item.enabled}</p>
