@@ -15,31 +15,13 @@ export default function index() {
                 src="https://randomuser.me/api/portraits/women/71.jpg"
               ></img>
             </div>
-            <div className="flex-col pt-3  bg-zinc-200">
-              <span className=" text-3xl pl-7 pt-[12%] tracking-wide font-serif ">
+            <div className="flex-col bg-zinc-200">
+              <span className=" text-4xl pl-7 pt-[12%] tracking-wide font-serif ">
                 {resume.personal.firstName} {resume.personal.lastName}
               </span>
-              <p className="  text-2xl  pl-8 text tracking-wider font-thin mb-3                     ">
+              <p className="  text-3xl  pl-8 text tracking-wider font-thin mb-3                     ">
                 {resume.personal.role}
               </p>
-              <div>
-                <div className=" pb-2 rounded-md  flex ">
-                  {resume.social.map((item) => (
-                    <div className="ml-9 mt-2  mb-2">
-                      <span>
-                        <Link href={item.url}>
-                          <img
-                            src={
-                              "https://www." + item.network + ".com/favicon.ico"
-                            }
-                            className="w-5 "
-                          />
-                        </Link>
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
             <div className="p-2">
               <p className="text-black font-bold tracking-wider  p-1 mx-2 my-1">
@@ -127,15 +109,15 @@ export default function index() {
                     <p className="font-semibold text-white ">
                       {item.institution} [{item.startDate} - {item.endDate}]
                     </p>
-                    <p className=" text-white">{item.fieldOfStudy}</p>
-                    <p className=" text-white">{item.typeOfDegree}</p>
-                    <p className=" text-white">{item.gpa}</p>
-                    <p className=" text-white">{item.summary.enabled}</p>
-                    <p className=" text-white">{item.enabled}</p>
+                    <p>{item.fieldOfStudy}</p>
+                    <p>{item.typeOfDegree}</p>
+                    <p>{item.gpa}</p>
+                    <p>{item.summary.enabled}</p>
+                    <p>{item.enabled}</p>
                   </div>
                 ))}
               </div>
-              <div className="  text-white p-3">
+              <div className="  p-3">
                 <p className=" text-white font-semibold text-xl tracking-wide  p-1  mt-3 ">
                   PROJECTS
                 </p>
@@ -143,11 +125,9 @@ export default function index() {
                 {resume.projects.map((item) => (
                   <div className="p-1 text-white ">
                     <Link href={item.website}>
-                      <p className="font-bold  text-white tracking-wider">
-                        {item.name}
-                      </p>
+                      <p className="font-bold  tracking-wider">{item.name}</p>
                     </Link>
-                    <p className="ml-3  text-white">
+                    <p className="ml-3">
                       {item.from}- {item.to}
                     </p>
                     {/* <p>{item.summary.data}</p> */}
@@ -163,11 +143,11 @@ export default function index() {
                 <hr></hr>
                 {resume.certifications.map((item) => (
                   <div className="pt-4 text-white ">
-                    <p className=" text-white font-semibold">
+                    <p className="font-semibold">
                       {item.title} [{item.date}]
                     </p>
                     <p></p>
-                    <p className=" text-white">{item.issuer}</p>
+                    <p>{item.issuer}</p>
                     {/* <p>{item.summary.data}</p> */}
                     <p>{item.summary.enabled}</p>
                     <p>{item.enabled}</p>
