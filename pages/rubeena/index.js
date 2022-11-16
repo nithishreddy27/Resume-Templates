@@ -14,6 +14,9 @@ export default function index() {
       <Link href="/rubeena/tokyo" className="m-10 p-4 bg-gray-300 rounded-lg">
         TOKYO
       </Link>
+      <Link href="/rubeena/premium" className="m-10 p-4 bg-gray-300 rounded-lg">
+        PREMIUM
+      </Link>
     </div>
   );
 }
