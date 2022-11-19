@@ -13,7 +13,7 @@ export default function index() {
               className="w-[60%] h-[40%] pb-2"
               src="https://randomuser.me/api/portraits/women/71.jpg"
             ></img>
-            <span className="  text-xl  bg-white   rounded-sm  text-black tracking-wide   font-semibold ">
+            <span className="  text-xl  bg-white   rounded-sm  text-black tracking-wide  font-semibold ">
               {resume.personal.role}
             </span>
 

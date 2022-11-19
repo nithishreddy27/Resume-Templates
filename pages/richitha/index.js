@@ -10,23 +10,23 @@ export default function index() {
             RESUMES
           </h1>
           <div className="p-12  bg-white mx-[40%] font-semibold  text-3xl ">
-            <Link href="/richitha/one" className=" bg-white rounded-md  p-2 ">
+            <Link href="/richitha/rone" className=" bg-white rounded-md  p-2 ">
               RESUME 1
             </Link>
             <p className="bg-white rounded-md p-5"></p>
-            <Link href="/richitha/two" className=" bg-white  p-2">
+            <Link href="/richitha/rtwo" className=" bg-white  p-2">
               RESUME 2
             </Link>
             <p className="bg-white  rounded-md p-5"></p>
-            <Link href="/richitha/three" className=" bg-white  p-2">
+            <Link href="/richitha/rthree" className=" bg-white  p-2">
               RESUME 3
             </Link>
             <p className="bg-white rounded-md p-5"></p>
-            <Link href="/richitha/four" className=" bg-white  p-2">
+            <Link href="/richitha/rfour" className=" bg-white  p-2">
               RESUME 4
             </Link>
             <p className="bg-white  rounded-md p-5"></p>
-            <Link href="/richitha/five" className=" bg-white  p-2">
+            <Link href="/richitha/rfive" className=" bg-white  p-2">
               RESUME 5
             </Link>
           </div>
