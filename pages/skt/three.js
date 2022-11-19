@@ -5,8 +5,8 @@ import Link from "next/link";
 export default function index() {
   const resume = demoResume();
   return (
-      <div className="flex align-middle justify-center bg-zinc-400 h-[285mm]">
-        <div className="container w-[210mm] h-[297mm] bg-white min-w-[210mm] m-10 ">
+    <div className="flex align-middle justify-center bg-zinc-400 h-[285mm] ">
+    <div className="container w-[210mm] h-[285mm] bg-white min-w-[210mm] ">
           <div className="grid grid-cols-5 ">
             <div className="col-span-2 border-2 border-solid border-black h-auto ml-5 mt-20">
               <img
