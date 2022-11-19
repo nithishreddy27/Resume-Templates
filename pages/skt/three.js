@@ -7,16 +7,16 @@ export default function index() {
   return (
     <div className="flex align-middle justify-center bg-zinc-400 h-[285mm] ">
     <div className="container w-[210mm] h-[285mm] bg-white min-w-[210mm] ">
-          <div className="grid grid-cols-5 ">
+          <div className="grid grid-cols-5">
             <div className="col-span-2 border-2 border-solid border-black h-auto ml-5 mt-20">
               <img
-                className=" pt-4 w-52 absolute top-10 ml-10 border-4  border-white z-10"
+                className=" pt-4 w-52 absolute top-0 ml-10 border-2  border-gray-600 z-10"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpl60g6oKVerEKPde2ClN4-6ASK4Ds4KzlM0Y1N-K_bCgOCMBYZ019WUgRLOfNAqyyhnY&usqp=CAU"
                 alt="ProfilePhoto"
               />
 
               <div>
-                <h1 className="text-black mt-36 ml-16 font-medium text-3xl">
+                <h1 className="text-black mt-36 ml-16  font-medium text-3xl">
                   {resume.personal.firstName}
                 </h1>
                 <h1 className="text-black ml-16 font-medium text-3xl">
