@@ -5,16 +5,12 @@ import Link from "next/link";
 export default function index() {
   const resume = demoResume();
   return (
-    <div>
-      <Head>
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-      </Head>
-      <div className="flex align-middle justify-center bg-zinc-400">
-        <div className="container w-[210mm] h-[297mm] bg-white min-w-[210mm] m-10 pt-10">
+      <div className="flex align-middle justify-center bg-zinc-400 h-[285mm]">
+        <div className="container w-[210mm] h-[297mm] bg-white min-w-[210mm] m-10 ">
           <div className="grid grid-cols-5 ">
             <div className="col-span-2 border-2 border-solid border-black h-auto ml-5 mt-20">
               <img
-                className=" pt-8 w-52 absolute top-12 ml-10 border-4 border-white z-10"
+                className=" pt-4 w-52 absolute top-10 ml-10 border-4  border-white z-10"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpl60g6oKVerEKPde2ClN4-6ASK4Ds4KzlM0Y1N-K_bCgOCMBYZ019WUgRLOfNAqyyhnY&usqp=CAU"
                 alt="ProfilePhoto"
               />
@@ -126,6 +122,6 @@ export default function index() {
           </div>
         </div>
       </div>
-    </div>
+
   );
 }

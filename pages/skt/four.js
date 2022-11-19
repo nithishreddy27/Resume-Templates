@@ -6,8 +6,8 @@ import Link from "next/link";
 export default function index() {
   const resume = demoResume();
   return (
-    <div>
-      <div className="flex align-middle justify-center bg-zinc-400">
+
+      <div className="flex align-middle justify-center bg-zinc-400 h-[285mm]">
         <div className="container w-[210mm] h-[297mm] bg-white min-w-[210mm] m-10">
             <div className="w-[205mm] h-40 bg-blue-500 absolute z-0 mt-10">
             <h1 className="text-white ml-80 mt-8 text-5xl">
@@ -114,6 +114,5 @@ export default function index() {
             </div>
         </div>
       </div>
-    </div>
   );
 }
