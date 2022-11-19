@@ -9,10 +9,10 @@ export default function Home() {
   const resume = demoResume();
   return (
     <>
-      <div className="bg-slate-200  p-10">
-        <div className="bg-blue-200 w-[210mm] h-[297mm] overflow-auto drop-shadow-2xl mx-auto">
-          <div className="m-4 mt-8">
-            <div className="flex  space-x-3 ">
+      <div className="bg-slate-200 h-[290mm] align-middle justify-center ">
+        <div className="bg-blue-200 w-[210mm]  h-[292mm] overflow-auto drop-shadow-2xl  min-w-[210mm]">
+          <div className="m-4 mt-8 mb-5  ">
+            <div className="flex ml-4 mr-4 space-x-3 ">
               <div className="w-[37%] bg-white rounded-md p-3 ">
                 {/* personal details */}
                 <div>
@@ -93,7 +93,9 @@ export default function Home() {
                   {resume.personal.role}
                 </p>
 
-                <span className="font-bold  m-2 rounded">PROFILE</span>
+                <span className="font-bold  m-2 rounded tracking-wide">
+                  PROFILE
+                </span>
                 <br></br>
                 <div>
                   <p className="text-sm">{resume.objective}</p>
@@ -118,8 +120,8 @@ export default function Home() {
             </div>
           </div>
           <div className="flex space-x-3 m-4 ">
-            <div className="b-[50%] rounded-md  bg-white p-2">
-              <p className="font-bold  m-2 ">EDUCATION</p>
+            <div className="b-[60%] rounded-md ml-4 mr-1 bg-white p-2">
+              <p className="font-bold  m-2 tracking-wide ">EDUCATION</p>
               {resume.education.map((item) => (
                 <div className="text-sm p-1">
                   <p className="font-semibold">
@@ -135,8 +137,9 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className="bg-white w-[50%] rounded-md p-2 pr-2">
-              <p className="font-bold  m-2 ">WORK</p>
+            <div className="bg-white w-[47%] rounded-md p-3 pr-1 ">
+              <p className="font-bold tracking-wide  ">WORK</p>
+              <p className="p-2"></p>
               {resume.work.map((item) => (
                 <div>
                   <Link href={item.website}>
@@ -154,25 +157,25 @@ export default function Home() {
             </div>
           </div>
           <div className="flex space-x-3 m-4 ">
-            <div className="bg-white w-[50%] rounded-md p-2">
-              <p className="font-bold  m-2">PROJECTS</p>
+            <div className="bg-white w-[40%] rounded-md ml-4 p-2">
+              <p className="font-bold tracking-wide m-2">PROJECTS</p>
               {resume.projects.map((item) => (
-                <div>
+                <div className="p-1">
                   <Link href={item.website}>
-                    <p className="text-blue-400">{item.name}</p>
+                    <p className="text-black font-bold">{item.name}</p>
                   </Link>
                   <p>
-                    {item.from}- {item.to}
+                    [{item.from}]- [{item.to}]
                   </p>
-                  <p>{item.summary.data}</p>
+                  {/* <p>{item.summary.data}</p> */}
                   <p>{item.summary.enabled}</p>
                   <p>{item.enabled}</p>
                 </div>
               ))}
             </div>
 
-            <div className="bg-white w-[50%] rounded-md p-2">
-              <p className="font-bold m-2">CERTIFICATION</p>
+            <div className="bg-white w-[54%] rounded-md ml-5 p-2">
+              <p className="font-bold  m-2 tracking-wide">CERTIFICATION</p>
               {resume.certifications.map((item) => (
                 <div>
                   <p className="font-semibold">

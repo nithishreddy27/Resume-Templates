@@ -6,25 +6,25 @@ export default function index() {
   const resume = demoResume();
   return (
     <>
-      <div className="bg-slate-500  p-10">
-        <div className="bg-gray-200 w-[210mm] h-[297mm] m-2  mx-auto">
-          <div className="flex-grow space-x-2 ">
-            <div className="flex bg-white text-black  ">
+      <div className="bg-pink-100 h-[290mm] align-middle justify-center ">
+        <div className="bg-gray-50 w-[210mm] h-[297mm] m-2  mx-auto">
+          <div className="flex-grow space-x-2 border-separate ">
+            <div className="flex pt-3 pb-2  bg-black border-solid text-black  ">
               <img
-                className="w-[20%] h-[30] p-5 pb-5 pl-7  "
+                className="w-[20%] h-[30] p-3 pb-5 pl-7  "
                 src="https://randomuser.me/api/portraits/women/71.jpg"
               ></img>
 
-              <div>
-                <p className=" text-center text-5xl pl-9 tracking-wide font-serif m-4 mt-5 ml-8">
+              <div className="pt-5">
+                <p className=" text-center text-white text-4xl pl-9 tracking-wide font-serif m-4 mt-5 ml-8">
                   {resume.personal.firstName} {resume.personal.lastName}
                 </p>
-                <p className="  text-4xl justify pl-8 text tracking-wider font-thin mb-3 ml-11">
+                <p className="  text-3xl  text-white justify pl-[14%] text tracking-wider font-thin mb-3 ml-11">
                   {resume.personal.role}
                 </p>
               </div>
               <div>
-                <div className=" pb-2 rounded-md  flex bg-gray-200 m-14">
+                <div className=" pb-2 rounded-md flex bg-gray-50 m-14">
                   {resume.social.map((item) => (
                     <div className="mx-3 mt-2 ">
                       <span>
@@ -43,10 +43,10 @@ export default function index() {
               </div>
             </div>
           </div>
-          <div className="flex">
+          <div className="flex m-5">
             <div className="flex w-[60%]">
               <div className="flex-col">
-                <div className="flex-col bg-gray-200 ">
+                <div className="flex-col bg-gray-50 ">
                   <div className=" m-4 ">
                     <p className="bg-gray-800 text-white p-1 rounded-md mt-3 text-center">
                       PROFILE
@@ -138,8 +138,8 @@ export default function index() {
               </div>
               <div></div>
             </div>
-            <div className="flex w-[80%] p-3">
-              <div className="bg-gray-200 ">
+            <div className="flex w-[60%] p-3">
+              <div className="bg-gray-50 ">
                 <p className="bg-gray-800 text-white mt-1 p-1 text-center rounded-md ">
                   WORK
                 </p>

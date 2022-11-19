@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function index() {
   const resume = demoResume();
   return (
-    <div className="bg-slate-200 p-10">
+    <div className="bg-slate-200 h-[290mm]">
       <div className="bg-white  w-[210mm] h-[297mm] drop-shadow-2xl mx-auto">
         <div className="bg-white flex space-x-5">
           <div className="flex-col w-[70%] ">
