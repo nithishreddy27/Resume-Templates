@@ -29,7 +29,7 @@ export default function index() {
         </div>
           
          <div>
-          <h1 className="font-medium text-2xl ml-5 pt-4 mb-1">Employement History</h1>
+          <h1 className="font-medium text-2xl ml-5 pt-4 mb-1 p-2">Employement History</h1>
                         {
                             resume.work.map(item=>(
                                 <div>
@@ -45,7 +45,7 @@ export default function index() {
          </div>
          <div>
           
-            <h1 className="font-medium text-2xl ml-5 pt-2 mb-1">Certifications</h1>
+            <h1 className="font-medium text-2xl ml-5 pt-2 mb-1 p-2">Certifications</h1>
             {
               resume.certifications.map(item=>(
                 <div>
@@ -57,7 +57,7 @@ export default function index() {
             }
            </div>
            <div>
-            <h1 className="font-medium text-2xl ml-5 pt-2 mb-1">Awards</h1>
+            <h1 className="font-medium text-2xl ml-5 pt-2 mb-1 p-2">Awards</h1>
             {
                 resume.awards.map(item=>(
                   <div>
@@ -74,7 +74,7 @@ export default function index() {
           </div>
         <div className="col-span-3">
           <div className="bg-blue-800 h-52">
-            <h1 className="font-bold  text-lg ml-12 pt-4">
+            <h1 className="font-bold  text-lg ml-12 pt-4 p-2">
               Social Network
             </h1>
             {resume.social.map((item) => (
@@ -90,9 +90,9 @@ export default function index() {
               </div>
             ))}
           </div>
-          <div class="bg-gray-300 h-[84%]">
+          <div class="bg-gray-300 h-[88%]">
             <div className="p-2">
-              <h1 className="font-bold text-lg ml-8 pt-4">skills</h1>
+              <h1 className="font-bold text-lg ml-8 pt-4 p-2">skills</h1>
               {resume.skills.map((item) => (
                 <div>
                   <h1 className="font-medium ml-8 p-1">{item.name}</h1>
@@ -101,34 +101,34 @@ export default function index() {
               ))}
             </div>
             <div className="p-2 px-0">
-              <h1 className="font-medium text-xl ml-6 mb-0">Education</h1>
+              <h1 className="font-medium text-xl ml-6 mb-0 p-2">Education</h1>
               {resume.education.map((item) => (
                 <div className="p-1">
                   <h1 className=" ml-6 text-sm font-medium">{item.institution}</h1>
                   <h6 className="text-xs ml-6 font-medium text-yellow-500">
                     {item.startDate} - {item.endDate}
                   </h6>
-                  <li className="ml-8 text-normal font-medium">{item.fieldOfStudy}</li>
+                  <li className="ml-10 text-normal font-medium">{item.fieldOfStudy}</li>
                 </div>
               ))}
             </div>
             <div className="p-2">
-              <h1 className="font-medium text-xl ml-6 mb-0"> Hobbies</h1>
+              <h1 className="font-medium text-xl ml-6 mb-0 p-2"> Hobbies</h1>
               {
                 resume. hobbies.map((item)=>(
                   <div>
-                    <li className="font-normal ml-8 text">{item.name}</li>
+                    <li className="font-normal ml-10 text">{item.name}</li>
                   </div>
   
                 ))
               }
             </div>
             <div className="p-2">
-              <h1 className=" text-lg font-medium ml-6 mb-0">Languages</h1>
+              <h1 className=" text-lg font-medium ml-6 mb-0 p-2">Languages</h1>
               {
                 resume.languages.map((item)=>(
                   <div>
-                    <li className="font-normal ml-8 tex-sm">{item.name}</li>
+                    <li className="font-normal ml-10 tex-sm">{item.name}</li>
                   </div>
   
                 ))
@@ -138,8 +138,8 @@ export default function index() {
               <h1 className=" text-lg font-medium ml-6 ">Projects</h1>
               {
                 resume.projects.map((item)=>(
-                  <div>
-                    <h1 className="font-medium ml-8 tex-lg">{item.name}</h1>
+                  <div className="p-2">
+                    <li className="font-medium ml-8 tex-lg">{item.name}</li>
                     <h6 className="text-xs ml-8 font-medium text-yellow-500">{item.from} - {item.to}</h6>
                     
                   </div>

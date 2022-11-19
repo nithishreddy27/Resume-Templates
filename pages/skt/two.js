@@ -65,6 +65,16 @@ export default function index() {
                     ))
                   }
                   </div>
+                  <div>
+                  <h1 className="font-medium px-8 py-2 text-orange-800 pt-10">Languages</h1>
+                  {
+                    resume.languages.map(item=>(
+                        <div>
+                            <h1 className="px-8">{item.name}</h1>
+                        </div>
+                    ))
+                  }
+                  </div>
                  
                   </div>
                 </div>
@@ -114,6 +124,21 @@ export default function index() {
                             ))
                         }
                     </div>
+                    <div>
+                        <h1 className="font-medium text-orange-800 pt-4">certifications</h1>
+                        {
+                            resume.projects.map(item=>(
+                                <div>
+                                    <h2 className="font-medium">{item.name}</h2>
+                                    <h6 className="text-xs">{item.from} - {item.to}</h6>
+                                    <li className="text-sm px-8">{item.website}</li>
+                                   
+
+                                </div>
+                            ))
+                        }
+                    </div>
+
                    
                 </div>
             </div>

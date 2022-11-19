@@ -15,7 +15,7 @@ export default function index() {
                 <h6 className="text-white ml-80 mt-1 ">{resume.personal.role}</h6>
             </div>
             <div className="grid grid-cols-3">
-                <div className="bg-slate-900 h-[297mm] ml-5 z-10">
+                <div className="bg-slate-900 h-auto ml-5 z-10">
                 <img className="w-40 m-10 rounded-lg"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpl60g6oKVerEKPde2ClN4-6ASK4Ds4KzlM0Y1N-K_bCgOCMBYZ019WUgRLOfNAqyyhnY&usqp=CAU"
                     alt="ProfilePhoto"
@@ -63,19 +63,32 @@ export default function index() {
                     )
                     )
                   }
-
                   </div>
+                  <div className="border-b-2 border-white m-6 p-3">
+                  <h1 className="font-medium text-lg text-white ">HOBBIES</h1>
+                  {
+                    resume.hobbies.map((item)=>(
+                        <div className="m-2">
+                        <h1 className="text-white">{item.name}</h1>
+                        
+                        </div>
+                        
+                    )
+                    )
+                  }
+                  </div>
+                 
                   </div>
                   </div>
                 <div className="col-span-2">
                     <div className="pt-48">
                     <div className="border-b-4 border-black m-4 p-5">
                         <h1 className="font-medium text-lg text-gray-600">ABOUT ME</h1>
-                        <p className="text-sm font-medium pt-2">{resume.objective}</p>
+                        <p className="text-sm font-medium pt-1">{resume.objective}</p>
 
                     </div>
                     </div>
-                    <div  className="border-b-4 border-black m-4 p-5">
+                    <div  className="border-b-4 border-black m-4 p-2">
                     <h1 className="font-medium text-lg text-gray-600">WORK EXPERIENCE</h1>
                     {
                     resume.work.map((item) => (
@@ -93,8 +106,8 @@ export default function index() {
                   </div>
                 ))}
 
-                    </div>
-                    <div  className="border-b-4 border-black m-4 p-5">
+                  </div>
+                    <div  className="border-b-4 border-black m-4 p-2">
                     <h1 className="font-medium text-lg text-gray-600">EDUCATION</h1>
                     {resume.education.map((item) => (
                   <div>
@@ -103,6 +116,19 @@ export default function index() {
                       {item.startDate} - {item.endDate}
                     </h6>
                     <li className="ml-8 font-semibold">{item.fieldOfStudy}</li>
+                  </div>
+                ))}
+
+                    </div>
+                    <div  className="border-b-4 border-black m-4 p-2">
+                    <h1 className="font-medium text-lg text-gray-600">AWARDS</h1>
+                    {resume.awards.map((item) => (
+                  <div>
+                    <h1 className="font-medium ml-6">{item.title}</h1>
+                    <h6 className="text-xs font-semibold ml-6">
+                      {item.date}
+                    </h6>
+                    <li className="ml-8 font-semibold">{item.summary.data}</li>
                   </div>
                 ))}
 
