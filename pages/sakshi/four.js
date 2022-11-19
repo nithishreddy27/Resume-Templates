@@ -24,32 +24,32 @@ export default function four() {
                     </div>
                     <div className='firstone w-[85mm] relative top-[-100px]'>
                         <div className='personal'>
-                        <div className="dob pl-10 pt-3 text-white"><i class='bx bxs-calendar pr-4 text-lg text-white'></i><span className="text-base relative bottom-[3px] text-white">{resume.personal.dob}</span></div>
-                        <div class="phone pl-10 pt-3 text-white"><i class='bx bxs-phone pr-4 text-lg text-white'></i><span class="text-base relative bottom-1 text-white">{resume.personal.phone}</span></div>
-                        <div class="mail pl-10 pt-3 pb-2 text-white"><i class='bx bxs-envelope pr-4 text-lg text-white'></i><span class="text-base relative bottom-1 text-white">{resume.personal.email}</span></div>
+                        <div className="dob pl-10 pt-3 text-white"><i className='bx bxs-calendar pr-4 text-lg text-white'></i><span className="text-base relative bottom-[3px] text-white">{resume.personal.dob}</span></div>
+                        <div className="phone pl-10 pt-3 text-white"><i className='bx bxs-phone pr-4 text-lg text-white'></i><span class="text-base relative bottom-1 text-white">{resume.personal.phone}</span></div>
+                        <div className="mail pl-10 pt-3 pb-2 text-white"><i className='bx bxs-envelope pr-4 text-lg text-white'></i><span class="text-base relative bottom-1 text-white">{resume.personal.email}</span></div>
                         </div>
-                        <div class="education">
-                        <h2 class="text-center text-xl font-sans font-bold text-zinc-200">E D U C A T I O N</h2>
+                        <div className="education">
+                        <h2 className="text-center text-xl font-sans font-bold text-zinc-200">E D U C A T I O N</h2>
                         {
                                 resume.education.map(item=>(
-                                    <p className="pl-10 pr-5 pt-5"><span class="font-medium text-white">{item.institution}</span><span className='text-white'> in </span><span class="font-medium text-white">{item.fieldOfStudy}<br/>({item.startDate} to {item.endDate})</span><br/><i class='bx bxs-graduation text-white'></i><span className='text-white'> {item.typeOfDegree} in {item.fieldOfStudy} ({item.gpa})</span></p>
+                                    <p className="pl-10 pr-5 pt-5"><span className="font-medium text-white">{item.institution}</span><span className='text-white'> in </span><span className="font-medium text-white">{item.fieldOfStudy}<br/>({item.startDate} to {item.endDate})</span><br/><i className='bx bxs-graduation text-white'></i><span className='text-white'> {item.typeOfDegree} in {item.fieldOfStudy} ({item.gpa})</span></p>
                                 ))
                         }
                         </div>
-                        <div class="certifications">
-                        <h2 class="text-center text-xl font-sans font-bold pt-3 text-zinc-200 pb-3">C E R T I F I C A T I O N S</h2>
+                        <div className="certifications">
+                        <h2 className="text-center text-xl font-sans font-bold pt-3 text-zinc-200 pb-3">C E R T I F I C A T I O N S</h2>
                         {
                                 resume.certifications.map(item=>(
-                                    <p class="pl-10 pr-5 pt-1 text-white"><i class='bx bxs-square text-xs pr-3 text-white'></i><span className='text-white'>{item.title} from {item.issuer}</span></p>
+                                    <p className="pl-10 pr-5 pt-1 text-white"><i className='bx bxs-square text-xs pr-3 text-white'></i><span className='text-white'>{item.title} from {item.issuer}</span></p>
                                 ))
                         }
                         </div>
-                        <div class="skills">
-                    <div class="pl-10">
-                    <h2 class="text-center text-xl font-sans font-bold pt-5 pb-1 text-zinc-300">S K I L L S</h2>
+                        <div className="skills">
+                    <div className="pl-10">
+                    <h2 className="text-center text-xl font-sans font-bold pt-5 pb-1 text-zinc-300">S K I L L S</h2>
                     {
                                 resume.skills.map(item=>(
-                                    <span class="pr-2 text-white">{item.name} </span>
+                                    <span className="pr-2 text-white">{item.name} </span>
                                 ))
                     }
                     </div>
@@ -58,38 +58,38 @@ export default function four() {
                     
                 </div>
                 <div className='second bg-emerald-100 w-[125mm] h-[297mm]'>
-                        <div class="name">
-                            <div class="text-3xl mx-20 mt-10 font-semibold border-b-[1px] border-gray-600 font-serif">
+                        <div className="name">
+                            <div className="text-3xl mx-20 mt-10 font-semibold border-b-[1px] border-gray-600 font-serif">
                             <h1>{resume.personal.firstName}</h1>
                             <h1>{resume.personal.lastName}</h1>
-                            <h2 class="text-lg font-normal py-3">{resume.personal.role}</h2>
+                            <h2 className="text-lg font-normal py-3">{resume.personal.role}</h2>
                             </div>
                         </div>
-                        <div class="career-objective">
-                            <h2 class="text-center text-xl font-sans font-bold pt-3">C A R E E R  O B J E C T I V E</h2>
-                            <p class="pl-10 pr-5 pt-2 text-xs">{resume.objective}</p>
+                        <div className="career-objective">
+                            <h2 className="text-center text-xl font-sans font-bold pt-3">C A R E E R  O B J E C T I V E</h2>
+                            <p className="pl-10 pr-5 pt-2 text-xs">{resume.objective}</p>
                         </div>
-                        <div class="experience">
-                            <h2 class="text-center text-xl font-sans font-bold pt-5">E X P E R I E N C E</h2>
+                        <div className="experience">
+                            <h2 className="text-center text-xl font-sans font-bold pt-5">E X P E R I E N C E</h2>
                             {
                                 resume.work.map(item=>(
-                                    <p class="pl-10 pr-5 pt-2"><span class="font-medium text-lg pr-3">{item.designation} in {item.company}</span><br></br>({item.from} to {item.to})<br/><a href='{item.website}'>{item.website}</a><br></br><span className='text-sm'>{item.summary.data}</span></p>
+                                    <p className="pl-10 pr-5 pt-2"><span className="font-medium text-lg pr-3">{item.designation} in {item.company}</span><br></br>({item.from} to {item.to})<br/><Link href={item.website}>{item.website}</Link><br></br><span className='text-sm'>{item.summary.data}</span></p>
                                 ))
                             }
                         </div>
-                        <div class="projects">
-                            <h2 class="text-center text-xl font-sans font-bold pt-2">P R O J E C T S</h2>
+                        <div className="projects">
+                            <h2 className="text-center text-xl font-sans font-bold pt-2">P R O J E C T S</h2>
                             {
                                 resume.projects.map(item=>(
-                                    <p class="pl-10 pr-5 pt-1"><span class="font-medium text-lg pr-3">{item.name}</span> ({item.from} to {item.to})<br/><a href='{item.website}'>{item.website}</a><br></br><span className='text-sm'>{item.summary.data}</span></p>
+                                    <p className="pl-10 pr-5 pt-1"><span className="font-medium text-lg pr-3">{item.name}</span> ({item.from} to {item.to})<br/><a href={item.website}>{item.website}</a><br></br><span className='text-sm'>{item.summary.data}</span></p>
                                 ))
                             }
                         </div>
-                        <div class="awards">
-                        <h2 class="text-center text-xl font-sans font-bold pt-2">A W A R D S</h2>
+                        <div className="awards">
+                        <h2 className="text-center text-xl font-sans font-bold pt-2">A W A R D S</h2>
                             {
                                 resume.awards.map(item=>(
-                                    <p class="pl-10 pr-5 pt-1"><i class='bx bxs-award pr-1' ></i><span class="font-medium">{item.name}</span> from {item.awarder}</p>
+                                    <p className="pl-10 pr-5 pt-1"><i className='bx bxs-award pr-1' ></i><span className="font-medium">{item.name}</span> from {item.awarder}</p>
                                 ))
                             }
                         </div>

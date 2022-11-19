@@ -15,27 +15,27 @@ export default function two() {
             <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'></link>
         </Head>
         <main className={styles.main}>
-            <div class="container w-[210mm] h-[297mm] min-w-[210mm] bg-white text-black">
-                <div class="first w-[210mm] h-[45mm] mt-5 bg-zinc-300 flex">
-                    <div class="name font-serif">
-                        <h1 class="text-4xl font-semibold px-10 pt-10">{resume.personal.firstName}<span class="font-normal pl-2"> {resume.personal.lastName}</span></h1>
-                        <h2 class="text-xl px-10 pt-5 font-sans font-medium">{resume.personal.role}</h2>
+            <div className="container w-[210mm] h-[297mm] min-w-[210mm] bg-white text-black">
+                <div className="first w-[210mm] h-[45mm] mt-5 bg-zinc-300 flex">
+                    <div className="name font-serif">
+                        <h1 className="text-4xl font-semibold px-10 pt-10">{resume.personal.firstName}<span className="font-normal pl-2"> {resume.personal.lastName}</span></h1>
+                        <h2 className="text-xl px-10 pt-5 font-sans font-medium">{resume.personal.role}</h2>
                     </div>
-                    <div class="photo">
-                    <div class="pl-[80px] pt-16 ml-20">
-                        <img src="https://th.bing.com/th/id/R.3f1e3fb67a36a4f0e88e267a39fc5fe4?rik=SWNFXn5k1gxRFA&riu=http%3a%2f%2fthispix.com%2fwp-content%2fuploads%2f2015%2f06%2fpassport-026.jpg&ehk=MqDfVA9i8hE5HdOOiYBteZYzQTs1TxhQivfpM8mk9EA%3d&risl=&pid=ImgRaw&r=0" class="w-[130px] h-[130px] rounded-full"></img>
+                    <div className="photo">
+                    <div className="pl-[80px] pt-16 ml-20">
+                        <img src="https://th.bing.com/th/id/R.3f1e3fb67a36a4f0e88e267a39fc5fe4?rik=SWNFXn5k1gxRFA&riu=http%3a%2f%2fthispix.com%2fwp-content%2fuploads%2f2015%2f06%2fpassport-026.jpg&ehk=MqDfVA9i8hE5HdOOiYBteZYzQTs1TxhQivfpM8mk9EA%3d&risl=&pid=ImgRaw&r=0" className="w-[130px] h-[130px] rounded-full"></img>
                         </div>
                     </div>
                 </div>
-                <div class="second flex">
-                    <div class="side1 w-[85mm]"> 
-                        <div class="contact  border-b-2 border-r-2 border-gray-500 mx-6 mt-5">
-                            <div class="dob pl-10 pt-1"><i class='bx bxs-calendar pr-4 text-lg'></i><span class="text-base relative bottom-[3px]">{resume.personal.dob}</span></div>
-                            <div class="phone pl-10 pt-1"><i class='bx bxs-phone pr-4 text-lg'></i><span class="text-base relative bottom-1">{resume.personal.phone}</span></div>
-                            <div class="mail pl-10 pt-1"><i class='bx bxs-envelope pr-4 text-lg'></i><span class="text-base relative bottom-1">{resume.personal.email}</span></div>
-                            <div class="social pl-10 pt-1 flex">
+                <div className="second flex">
+                    <div className="side1 w-[85mm]"> 
+                        <div className="contact  border-b-2 border-r-2 border-gray-500 mx-6 mt-5">
+                            <div className="dob pl-10 pt-1"><i className='bx bxs-calendar pr-4 text-lg'></i><span className="text-base relative bottom-[3px]">{resume.personal.dob}</span></div>
+                            <div className="phone pl-10 pt-1"><i className='bx bxs-phone pr-4 text-lg'></i><span className="text-base relative bottom-1">{resume.personal.phone}</span></div>
+                            <div className="mail pl-10 pt-1"><i className='bx bxs-envelope pr-4 text-lg'></i><span className="text-base relative bottom-1">{resume.personal.email}</span></div>
+                            <div className="social pl-10 pt-1 flex">
                                 {resume.social.map(item=>(
-                                    <div class="pr-2">
+                                    <div className="pr-2">
                                     <span>
                                         <Link href={item.url}>
                                             <img src={"https://www."+item.network+".com/favicon.ico"} className="w-5 grayscale-[40%]">
@@ -45,75 +45,75 @@ export default function two() {
                                     </div>
                                 ))}
                             </div>
-                            <div class="w-3 h-3 rounded-full border-2 border-gray-500 relative left-[266px] bottom-[-5px] bg-white "></div>
+                            <div className="w-3 h-3 rounded-full border-2 border-gray-500 relative left-[266px] bottom-[-5px] bg-white "></div>
                         </div>
-                        <div class="education border-b-2 border-r-2 border-gray-500 mx-6">
-                            <div class="pb-2">
-                            <h2 class="text-center text-xl font-serif font-medium underline pt-5">E D U C A T I O N</h2>
+                        <div className="education border-b-2 border-r-2 border-gray-500 mx-6">
+                            <div className="pb-2">
+                            <h2 className="text-center text-xl font-serif font-medium underline pt-5">E D U C A T I O N</h2>
                             {
                                 resume.education.map(item=>(
-                                    <p class="pl-10 pr-5 pt-2"><span class="font-medium">{item.institution}</span> in <span class="font-medium">{item.fieldOfStudy}<br/>({item.startDate} to {item.endDate})</span><br/><i class='bx bxs-graduation'></i> {item.typeOfDegree} in {item.fieldOfStudy} ({item.gpa})</p>
+                                    <p className="pl-10 pr-5 pt-2"><span className="font-medium">{item.institution}</span> in <span className="font-medium">{item.fieldOfStudy}<br/>({item.startDate} to {item.endDate})</span><br/><i class='bx bxs-graduation'></i> {item.typeOfDegree} in {item.fieldOfStudy} ({item.gpa})</p>
                                 ))
                             }
                             </div>
-                            <div class="w-3 h-3 rounded-full border-2 border-gray-500 relative left-[266px] bottom-[-5px] bg-white "></div>
+                            <div className="w-3 h-3 rounded-full border-2 border-gray-500 relative left-[266px] bottom-[-5px] bg-white "></div>
                         </div>
-                        <div class="certifications border-r-2 border-b-2 border-gray-500 mx-6">
-                            <div class="pb-2">
-                            <h2 class="text-center text-xl font-serif font-medium underline pt-5 pb-3">C E R T I F I C A T I O N S</h2>
+                        <div className="certifications border-r-2 border-b-2 border-gray-500 mx-6">
+                            <div className="pb-2">
+                            <h2 className="text-center text-xl font-serif font-medium underline pt-5 pb-3">C E R T I F I C A T I O N S</h2>
                             {
                                 resume.certifications.map(item=>(
-                                    <p class="pl-10 pr-2 pb-1"><i class='bx bxs-square text-xs pr-3'></i>{item.title} from {item.issuer}</p>
+                                    <p className="pl-10 pr-2 pb-1"><i className='bx bxs-square text-xs pr-3'></i>{item.title} from {item.issuer}</p>
                                 ))
                             }
                             </div>
-                            <div class="w-3 h-3 rounded-full border-2 border-gray-500 relative left-[266px] bottom-[-5px] bg-white "></div>
+                            <div className="w-3 h-3 rounded-full border-2 border-gray-500 relative left-[266px] bottom-[-5px] bg-white "></div>
                         </div>
-                        <div class="skills border-r-2 border-gray-500 mx-6">
-                            <div class="pl-10 pb-5">
-                            <h2 class="text-center text-xl font-serif font-medium underline pt-3 pb-2">S K I L L S</h2>
+                        <div className="skills border-r-2 border-gray-500 mx-6">
+                            <div className="pl-10 pb-5">
+                            <h2 className="text-center text-xl font-serif font-medium underline pt-3 pb-2">S K I L L S</h2>
                             {
                                 resume.skills.map(item=>(
-                                    <span class="pr-2">{item.name} </span>
+                                    <span className="pr-2">{item.name} </span>
                                 ))
                             }
                             </div>
                         </div>
                     </div>
-                    <div class="side2 w-[125mm]">
-                    <div class="career-objective border-b-2 border-gray-500 ml-[-24px] mr-5">
-                            <h2 class="text-center text-xl font-serif font-medium underline pt-8">C A R E E R  O B J E C T I V E</h2>
-                            <p class="pl-10 pr-5 pt-3 pb-3">{resume.objective}</p>
-                            <div class="w-3 h-3 rounded-full border-2 border-gray-500 relative left-[-7px] bottom-[-6px] bg-white "></div>
+                    <div className="side2 w-[125mm]">
+                    <div className="career-objective border-b-2 border-gray-500 ml-[-24px] mr-5">
+                            <h2 className="text-center text-xl font-serif font-medium underline pt-8">C A R E E R  O B J E C T I V E</h2>
+                            <p className="pl-10 pr-5 pt-3 pb-3">{resume.objective}</p>
+                            <div className="w-3 h-3 rounded-full border-2 border-gray-500 relative left-[-7px] bottom-[-6px] bg-white "></div>
                     </div>
-                    <div class="experience border-b-2 border-gray-500 ml-[-24px] mr-5">
-                    <h2 class="text-center text-xl font-serif font-medium underline pt-3">E X P E R I E N C E</h2>
-                        <div class="pb-5">
+                    <div className="experience border-b-2 border-gray-500 ml-[-24px] mr-5">
+                    <h2 className="text-center text-xl font-serif font-medium underline pt-3">E X P E R I E N C E</h2>
+                        <div className="pb-5">
                             {
                                 resume.work.map(item=>(
-                                    <p class="pl-10 pr-5 pt-2"><span class="font-medium text-lg pr-3">{item.designation} in {item.company}</span><br></br>({item.from} to {item.to})<br/><a href='{item.website}'>{item.website}</a><br></br></p>
+                                    <p className="pl-10 pr-5 pt-2"><span class="font-medium text-lg pr-3">{item.designation} in {item.company}</span><br></br>({item.from} to {item.to})<br/><Link href={item.website}>{item.website}</Link><br></br></p>
                                 ))
                             }
                         </div>
-                        <div class="w-3 h-3 rounded-full border-2 border-gray-500 relative left-[-7px] bottom-[-6px] bg-white "></div>
+                        <div className="w-3 h-3 rounded-full border-2 border-gray-500 relative left-[-7px] bottom-[-6px] bg-white "></div>
                     </div>
-                    <div class="projects border-b-2 border-gray-500 ml-[-24px] mr-5">
-                        <h2 class="text-center text-xl font-serif font-medium underline pt-3">P R O J E C T S</h2>
-                        <div class="pb-3">
+                    <div className="projects border-b-2 border-gray-500 ml-[-24px] mr-5">
+                        <h2 className="text-center text-xl font-serif font-medium underline pt-3">P R O J E C T S</h2>
+                        <div className="pb-3">
                             {
                                 resume.projects.map(item=>(
-                                    <p class="pl-10 pr-5 pt-3"><span class="font-medium text-lg pr-3">{item.name}</span> ({item.from} to {item.to})<br/><a href='{item.website}'>{item.website}</a><br></br></p>
+                                    <p className="pl-10 pr-5 pt-3"><span className="font-medium text-lg pr-3">{item.name}</span> ({item.from} to {item.to})<br/><Link href={item.website}>{item.website}</Link><br></br></p>
                                 ))
                             }
                         </div>
-                        <div class="w-3 h-3 rounded-full border-2 border-gray-500 relative left-[-7px] bottom-[-6px] bg-white "></div>
+                        <div className="w-3 h-3 rounded-full border-2 border-gray-500 relative left-[-7px] bottom-[-6px] bg-white "></div>
 
                     </div>
-                    <div class="awards border-gray-500 ml-[-24px] mr-5">
-                    <h2 class="text-center text-xl font-serif font-medium underline pt-3">A W A R D S</h2>
+                    <div className="awards border-gray-500 ml-[-24px] mr-5">
+                    <h2 className="text-center text-xl font-serif font-medium underline pt-3">A W A R D S</h2>
                             {
                                 resume.awards.map(item=>(
-                                    <p class="pl-10 pr-5 pt-1"><i class='bx bxs-award pr-1' ></i><span class="font-medium">{item.name}</span> from {item.awarder}</p>
+                                    <p className="pl-10 pr-5 pt-1"><i className='bx bxs-award pr-1' ></i><span className="font-medium">{item.name}</span> from {item.awarder}</p>
                                 ))
                             }
                     </div>
