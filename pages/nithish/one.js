@@ -5,8 +5,8 @@ import Link from "next/link";
 export default function one() {
   const resume = demoResume();
   return (
-    <div className="bg-gray-300 flex align-middle justify-center">
-      <div className="bg-slate-50 w-[210mm] h-[297mm] m-10 overflow-auto drop-shadow-2xl flex flex-row min-w-[210mm]">
+    <div className="bg-gray-300 flex align-middle justify-center h-[290mm]">
+      <div className="bg-slate-50 w-[210mm] h-[292mm] overflow-auto drop-shadow-2xl flex flex-row min-w-[210mm]">
         <div className="absolute left-44 top-11 border-[3px] border-gray-500 h-40 w-96 bg-white text-center">
           <h1 className="mt-8 font-extrabold text-2xl tracking-[3px]">
             {resume.personal.firstName} {resume.personal.lastName}

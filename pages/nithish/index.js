@@ -8,6 +8,7 @@ export default function index() {
       <Link href="/nithish/one" className='m-10 p-4 bg-slate-200 rounded-md'>FIRST</Link>
       <Link href="/nithish/two" className='m-10 p-4 bg-slate-200 rounded-md'>TWO</Link>
       <Link href="/nithish/three" className='m-10 p-4 bg-slate-200 rounded-md'>THREE</Link>
+      <Link href="/nithish/four" className='m-10 p-4 bg-slate-200 rounded-md'>FOUR</Link>
 
     </div>
   )
