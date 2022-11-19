@@ -25,44 +25,48 @@ export default function index() {
             <div className="bg-cyan-800 text-white">
               <div className="mt-64 mx-6">
                 <div>
-                  <h1 className="border-2 border-white  mt-5 mb-3 flex justify-center align-middle py-2">
+                  <h1 className="border-2 border-white  mt-5 mb-3 flex justify-center align-middle py-2 text-white">
                     CONTACTS
                   </h1>
-                  <h1>{resume.personal.email}</h1>
-                  <h1>{resume.personal.phone}</h1>
-                  <h1>{resume.personal.dob}</h1>
+                  <h1 className="text-white">{resume.personal.email}</h1>
+                  <h1 className="text-white">{resume.personal.phone}</h1>
+                  <h1 className="text-white">{resume.personal.dob}</h1>
                 </div>
                 <div>
-                  <h1 className="border-2 border-white  mt-5 mb-3 flex justify-center align-middle py-2">
+                  <h1 className="border-2 border-white  mt-5 mb-3 flex justify-center align-middle py-2 text-white">
                     SOCIAL
                   </h1>
                   {resume.social.map((item) => (
                     <div>
-                      <h1 className="">{item.network}</h1>
+                      <h1 className="text-white">{item.network}</h1>
                     </div>
                   ))}
                 </div>
                 <div>
-                  <h1 className="border-2 border-white  mt-5 mb-3 flex justify-center align-middle py-2">
+                  <h1 className="border-2 text-white border-white  mt-5 mb-3 flex justify-center align-middle py-2">
                     EDUCATION
                   </h1>
                   {resume.education.map((item) => (
                     <div className="py-1 my-2">
-                      <h1 className="text-xs">{item.endDate.slice(0, 4)}</h1>
-                      <h1 className="text-lg">{item.institution}</h1>
-                      <h1 className="text-xs">{item.fieldOfStudy}</h1>
+                      <h1 className="text-xs text-white">
+                        {item.endDate.slice(0, 4)}
+                      </h1>
+                      <h1 className="text-lg text-white">{item.institution}</h1>
+                      <h1 className="text-xs text-white">
+                        {item.fieldOfStudy}
+                      </h1>
                     </div>
                   ))}
                 </div>
                 <div>
-                  <h1 className="border-2 border-white  mt-5 mb-3 flex justify-center align-middle py-2">
+                  <h1 className="border-2 border-white text-white mt-5 mb-3 flex justify-center align-middle py-2">
                     SKILLS
                   </h1>
                   {resume.skills.map((item) => (
                     <div>
-                      <h1 className="relative">
+                      <h1 className="relative text-white">
                         {item.name}
-                        <span className="text-xs absolute right-0 py-1">
+                        <span className="text-xs absolute right-0 py-1 text-white">
                           {item.level}
                         </span>
                       </h1>
@@ -70,12 +74,12 @@ export default function index() {
                   ))}
                 </div>
                 <div>
-                  <h1 className="border-2 border-white  mt-5 mb-3 flex justify-center align-middle py-2">
+                  <h1 className="border-2 border-white  mt-5 mb-3 flex justify-center align-middle py-2 text-white">
                     HOBBIES
                   </h1>
                   {resume.hobbies.map((item) => (
                     <div>
-                      <h1 className="">{item.name}</h1>
+                      <h1 className="text-white">{item.name}</h1>
                     </div>
                   ))}
                 </div>

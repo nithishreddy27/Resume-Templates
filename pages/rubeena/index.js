@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-
 export default function index() {
   return (
     <div className="mx-auto w-[50%] text-center p-28">
