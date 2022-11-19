@@ -19,7 +19,7 @@ export default function index() {
               <span className=" text-3xl font-extrabold pl-7 pr-1 pt-[12%] tracking-wide font-serif ">
                 {resume.personal.firstName} {resume.personal.lastName}
               </span>
-              <p className="  text-2xl pl-7  text tracking-wider font-thin mb-3                     ">
+              <p className="  text-2xl pl-7  text tracking-wider font-thin mb-3">
                 {resume.personal.role}
               </p>
             </div>

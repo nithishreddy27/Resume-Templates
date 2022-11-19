@@ -8,7 +8,7 @@ export default function index() {
     <div className="bg-slate-200 h-[290mm]">
       <div className="bg-white  w-[210mm] h-[297mm] drop-shadow-2xl mx-auto">
         <div className="bg-white flex space-x-5">
-          <div className="flex-col w-[70%] ">
+          <div className="flex-col w-[70%]">
             <div>
               <img
                 className="w-[110%] h-[130%]"

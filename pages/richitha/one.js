@@ -72,7 +72,7 @@ export default function Home() {
                       </div>
 
                       <div className="text-sm">
-                        <p className="text-m font-semibold">LANGUAGES</p>
+                        <p className="text-m font-semibold">LANGUAGEs</p>
                         {resume.languages.map((item) => (
                           <div>
                             <p>

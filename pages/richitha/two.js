@@ -8,7 +8,7 @@ export default function index() {
     <>
       <div className="bg-pink-100 h-[290mm] align-middle justify-center ">
         <div className="bg-gray-50 w-[210mm] h-[297mm] m-2  mx-auto">
-          <div className="flex-grow space-x-2 border-separate ">
+          <div className="flex-grow space-x-2 border-separate">
             <div className="flex pt-3 pb-2  bg-black border-solid text-black  ">
               <img
                 className="w-[20%] h-[30] p-3 pb-5 pl-7  "

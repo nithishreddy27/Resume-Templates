@@ -5,7 +5,7 @@ export default function index() {
   return (
     <>
       <div>
-        <div className="m-20 text-center ">
+        <div className="m-20 text-center">
           <h1 className="text-5xl bg-black text-white p-6 mx-[40%] rounded-t-md ">
             RESUMES
           </h1>
