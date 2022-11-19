@@ -6,15 +6,11 @@ import Link from "next/link"
 export default function index() {
   const resume = demoResume();
   return (
-    <div>
-      <Head>
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-      </Head>
-      <div className="flex align-middle justify-center bg-zinc-400">
-        <div className="container w-[210mm] h-[297mm] bg-white min-w-[210mm] m-10">
+    <div className="flex align-middle justify-center bg-zinc-400 h-[285mm] ">
+    <div className="container w-[210mm] h-[285mm] bg-white min-w-[210mm] ">
             <div className="grid grid-cols-3">
             <div>
-                <div className="col-span-1 bg-gray-200 h-[100%] w-[95%]">
+                <div className="col-span-1 bg-gray-300 h-[100%] w-[95%]">
                     <div>
                         <img
                     className="rounded-full w-[119px] ml-10 pt-3"
@@ -69,12 +65,22 @@ export default function index() {
                     ))
                   }
                   </div>
+                  <div>
+                  <h1 className="font-medium px-8 py-2 text-orange-800 pt-10">Languages</h1>
+                  {
+                    resume.languages.map(item=>(
+                        <div>
+                            <h1 className="px-8">{item.name}</h1>
+                        </div>
+                    ))
+                  }
+                  </div>
                  
                   </div>
                 </div>
                 <div className="col-span-2 ">
-                    <h1 className="pt-12 text-xl font-bold">{resume.personal.firstName} {resume.personal.lastName}</h1>
-                    <h2 className="font-extralight pt-1">{resume.personal.role}</h2>
+                    <h1 className="mt-12 text-2xl font-bold ">{resume.personal.firstName} {resume.personal.lastName}</h1>
+                    <h2 className="font-nomal mt-1 ">{resume.personal.role}</h2>
                     <div>
                         <h1 className="font-medium text-orange-800 pt-20">Profile</h1>
                         <p >{resume.objective}</p>
@@ -118,11 +124,25 @@ export default function index() {
                             ))
                         }
                     </div>
+                    <div>
+                        <h1 className="font-medium text-orange-800 pt-4">certifications</h1>
+                        {
+                            resume.projects.map(item=>(
+                                <div>
+                                    <h2 className="font-medium">{item.name}</h2>
+                                    <h6 className="text-xs">{item.from} - {item.to}</h6>
+                                    <li className="text-sm px-8">{item.website}</li>
+                                   
+
+                                </div>
+                            ))
+                        }
+                    </div>
+
                    
                 </div>
             </div>
         </div>
       </div>
-    </div>
   );
 } 

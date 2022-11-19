@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function three() {
   var resume = demoResume();
   return (
-    <div className="bg-gray-300 flex align-middle justify-center">
-      <div className="bg-slate-50 w-[210mm] h-[292mm] m-10 overflow-auto drop-shadow-2xl flex flex-row min-w-[210mm]">
+    <div className="bg-gray-300 flex align-middle justify-center h-[290mm]">
+      <div className="bg-slate-50 w-[210mm] h-[292mm]  overflow-auto drop-shadow-2xl flex flex-row min-w-[210mm]">
         <div className="h-[95%] w-[35%] bg-sky-200 absolute left-10 rounded-b-full p-5 z-10 ">
           <img
             src="https://randomuser.me/api/portraits/men/40.jpg"

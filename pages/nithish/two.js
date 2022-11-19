@@ -7,8 +7,8 @@ export default function two() {
     const resume =demoResume()
   return (
     <>
-        <div className="bg-gray-300 flex align-middle justify-center">
-      <div className="bg-slate-50 w-[210mm] h-[285mm] m-10 overflow-auto drop-shadow-2xl flex flex-row min-w-[210mm]">
+        <div className="bg-gray-300 flex align-middle justify-center h-[285mm]">
+      <div className="bg-slate-50 w-[210mm] h-[285mm] overflow-auto drop-shadow-2xl flex flex-row min-w-[210mm]">
 
         <div className=' w-[35%] bg-gray-200 p-6'>
 
@@ -24,9 +24,6 @@ export default function two() {
                     <span><img src="https://www.freeiconspng.com/uploads/contact-methods-phone-icon-512x512-pixel-3.png" className='w-5 h-5'/></span>
                     <h1 className='mx-4'>{resume.personal.phone}</h1>
                         </div>  
-                    
-                    
-                    
                     <div className='flex my-1'>
                     <span><img src="https://www.freeiconspng.com/uploads/black-mail-icon-4.png"  className='w-7 h-7' /></span>
                     <h1 className='mx-2'>{resume.personal.email}</h1>
@@ -54,6 +51,8 @@ export default function two() {
                     ))
                 }
             </div>
+
+            
             {/* <div className='mt-4'>
             <h1 className='text-2xl font-semibold tracking-[2px]' >HOBBIES</h1>
                 <hr className="h-[2px] bg-black my-1" />

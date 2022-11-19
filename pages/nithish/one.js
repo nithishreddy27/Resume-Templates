@@ -5,14 +5,15 @@ import Link from "next/link";
 export default function one() {
   const resume = demoResume();
   return (
-    <div className="bg-gray-300 flex align-middle justify-center">
-      <div className="bg-slate-50 w-[210mm] h-[297mm] m-10 overflow-auto drop-shadow-2xl flex flex-row min-w-[210mm]">
-        <div className="absolute left-44 top-11 border-[3px] border-gray-500 h-40 w-96 bg-white text-center">
+    <div className="bg-gray-300 flex align-middle justify-center h-[290mm]">
+      <div className="bg-slate-50 w-[210mm] h-[292mm] overflow-auto drop-shadow-2xl flex flex-row min-w-[210mm]">
+        <div className="absolute left-44 top-5 border-[3px] border-gray-500 h-40 w-96 bg-white text-center">
           <h1 className="mt-8 font-extrabold text-2xl tracking-[3px]">
             {resume.personal.firstName} {resume.personal.lastName}
           </h1>
-          <h1 className="mt-3">{resume.personal.role}</h1>
+          <h1 className="mt-3">{resume.personal.role}</h1>  
 
+<<<<<<< HEAD
           <div className="mt-5 mb-4 flex  justify-center align-middle">
             {resume.social.map((item) => (
               <div className="mx-5 mt-1">
@@ -32,6 +33,23 @@ export default function one() {
           <div className="mt-56 mx-10 flex flex-col">
             <h4 className="font-bold tracking-[4px]">EDUCATION</h4>
             <hr className="w-[100%] h-1 bg-black my-2" />
+=======
+
+          <div className="mt-2 mb-4 flex  justify-center align-middle">
+            {
+                resume.social.map(item =>(
+                    <div className="mx-5 mt-1">
+                        <span className=""><Link href={item.url}><img src={"https://www."+item.network+".com/favicon.ico"} className="w-5 grayscale-[40%] "/></Link></span>
+                    </div>
+                ))
+            }
+          </div>
+        </div>
+        <div className="w-[40%] bg-gray-200">
+        <div className="mt-52 mx-10 flex flex-col">
+                <h4 className="font-bold tracking-[4px]">EDUCATION</h4>
+                <hr className="w-[100%] h-1 bg-black my-2"/>
+>>>>>>> 18cc8ec78e2881a07cdf37bf118ae2147b6debc1
 
             {resume.education.map((item) => (
               <div className="flex flex-col">
@@ -80,7 +98,7 @@ export default function one() {
             ))}
           </div>
         </div>
-        <div className="w-[60%] mt-56 mx-10">
+        <div className="w-[60%] mt-52 mx-10">
           <h2 className="font-bold tracking-[4px]">OBJECTIVE</h2>
           <hr className="w-[100%] h-1 bg-black my-1" />
           <p className="my-4">{resume.objective}</p>
