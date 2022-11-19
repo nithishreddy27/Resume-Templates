@@ -10,10 +10,10 @@ export default function index() {
         <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
       </Head>
       <div className="flex align-middle justify-center bg-zinc-400">
-        <div className="container w-[210mm] h-[297mm] bg-white min-w-[210mm] m-10">
+        <div className="container w-[210mm] h-[296mm] bg-white min-w-[210mm]">
           <div className="grid grid-cols-3">
-            <div className=" bg-red-700 h-[297mm]">
-              <div className="ml-8 bg-gray-200 h-[297mm] p-4">
+            <div className=" bg-red-700 h-[296mm]">
+              <div className="ml-8 bg-gray-200 h-[296mm] p-4">
                 <div className="">
                   <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpl60g6oKVerEKPde2ClN4-6ASK4Ds4KzlM0Y1N-K_bCgOCMBYZ019WUgRLOfNAqyyhnY&usqp=CAU"
