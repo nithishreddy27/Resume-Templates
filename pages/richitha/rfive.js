@@ -92,7 +92,7 @@ export default function index() {
               </div>
               <div className="pt-2">
                 <p className="text-black font-bold tracking-wider  p-1 mx-2 ">
-                  AWARDS
+                  AWARDS:
                 </p>
                 {resume.awards.map((item) => (
                   <div className="text-sm pt-4 ml-3">
