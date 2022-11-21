@@ -7,7 +7,7 @@ export default function index() {
       <div>
         <div className="m-20 text-center">
           <h1 className="text-5xl bg-black text-white p-6 mx-[40%] rounded-t-md ">
-            RESUMES
+            RESUME
           </h1>
           <div className="p-12  bg-white mx-[40%] font-semibold  text-3xl ">
             <Link href="/richitha/rone" className=" bg-white rounded-md  p-2 ">
