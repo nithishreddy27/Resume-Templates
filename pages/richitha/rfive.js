@@ -8,9 +8,9 @@ export default function index() {
     <div className="bg-slate-200 h-[290mm] align-middle justify-center ">
       <div className="  bg-white w-[210mm] h-[297mm] drop-shadow-2xl mx-auto m-2">
         <div className="flex space-x-4 m-4 ">
-          <div className="m-5 w-[120%]">
+          <div className="m-4 w-[120%]">
             <img
-              className="w-[60%] h-[40%] pb-2"
+              className="w-[75%] h-[40%] pb-2"
               src="https://randomuser.me/api/portraits/women/71.jpg"
             ></img>
             <span className="  text-xl  bg-white   rounded-sm  text-black tracking-wide  font-semibold ">

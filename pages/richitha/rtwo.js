@@ -89,9 +89,10 @@ export default function index() {
 
                       {resume.education.map((item) => (
                         <div className="text-base p-2">
-                          <p className="font-semibold">
-                            {item.institution} [{item.startDate} -{" "}
-                            {item.endDate}]
+                          <p className="font-semibold">{item.institution}</p>
+                          <p>
+                            {" "}
+                            [{item.startDate}] - [{item.endDate}]
                           </p>
                           <p>{item.fieldOfStudy}</p>
                           <p>{item.typeOfDegree}</p>

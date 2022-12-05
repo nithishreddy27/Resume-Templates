@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
       <div className="bg-slate-200 h-[290mm] align-middle justify-center ">
-        <div className="bg-blue-200 w-[210mm]  h-[292mm] overflow-auto drop-shadow-2xl  min-w-[210mm]">
-          <div className="m-4 mt-8 mb-5  ">
+        <div className="bg-gray-300 w-[210mm]  h-[292mm] overflow-auto drop-shadow-2xl  min-w-[210mm]">
+          <div className="m-4 mt-10 mb-5  ">
             <div className="flex ml-4 mr-4 space-x-3 ">
               <div className="w-[37%] bg-white rounded-md p-3 ">
                 {/* personal details */}

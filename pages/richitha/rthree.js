@@ -6,9 +6,10 @@ export default function index() {
   const resume = demoResume();
   return (
     <div className="bg-slate-200 h-[290mm]">
-      <div className="bg-zinc-800  w-[210mm] h-[297mm] m-2 overflow-auto drop-shadow-2xl mx-auto">
+      <div className="bg-zinc-800  w-[210mm] h-[297mm] m-2  mx-auto">
         <div className="flex">
-          <div className="flex-col  mt-[10%] w-[40%] bg-white  ">
+          <div className="pl-5"></div>
+          <div className="flex-col mt-[10%] pb-3 pl-1 w-[40%] bg-white  ">
             <div className="flex bg-white  text-black mt-10 ">
               <img
                 className="w-[60%] h-[50%] pl-[10%] mb-3 "
@@ -67,7 +68,7 @@ export default function index() {
               ))}
             </div>
 
-            <p className="text-black font-bold tracking-wider  p-1 mx-2 mt-2 ">
+            <p className="text-black font-bold tracking-wider   p-1 mx-2 mt-2 ">
               WORK
             </p>
             {resume.work.map((item) => (

@@ -7,9 +7,9 @@ export default function index() {
   return (
     <div className="bg-slate-200 h-[290mm]">
       <div className="bg-white  w-[210mm] h-[297mm] drop-shadow-2xl mx-auto">
-        <div className="bg-white flex space-x-5">
-          <div className="flex-col w-[70%]">
-            <div>
+        <div className="bg-white p-2 flex space-x-5">
+          <div className="flex-col w-[100%]">
+            <div className="m-3">
               <img
                 className="w-[110%] h-[130%]"
                 src="https://randomuser.me/api/portraits/women/71.jpg"
@@ -17,7 +17,7 @@ export default function index() {
             </div>
             <div className="flex">
               {resume.social.map((item) => (
-                <div className="mx-3 pb-4  mt-3 ">
+                <div className="mx-3 ml-5 pb-4  mt-3 ">
                   <span>
                     <Link href={item.url}>
                       <img
@@ -30,9 +30,9 @@ export default function index() {
               ))}
             </div>
           </div>
-          <div className="flex-col mt-2 ">
+          <div className="flex-col mt-2 ml-3">
             <div className="">
-              <p className=" text-black font-semibold text-xl p-1 pt-2 pl-4 tracking-wide  mt-3 ">
+              <p className=" text-black font-bold text-xl p-1 pt-2 pl-4 tracking-wide  mt-3 ">
                 PROFILE
               </p>
 
@@ -44,24 +44,24 @@ export default function index() {
         </div>
         <div className="">
           <div>
-            <div className="flex-col bg-black pt-3 pb-4">
-              <span className="  text-3xl  bg-white p-1 pl-2 rounded-sm  text-black tracking-wider font-thin ">
+            <div className="flex-col bg-black pt-3 pb-2">
+              <span className="  text-3xl  bg-white p-1 pl-2 rounded-sm  text-black tracking-wider font-thin  ml-2">
                 {resume.personal.role}
               </span>
-              <span className=" text-5xl pl-[20%] text-white tracking-wide text-right font-serif ">
+              <span className=" text-5xl pl-[10%] text-white tracking-wide text-right font-serif ">
                 {resume.personal.firstName} {resume.personal.lastName}
               </span>
             </div>
           </div>
-          <div className="flex">
+          <div className="flex  text-lg m-4">
             <div className="font-col bg-gray-200">
               <div className="p-2  bg-gray-50">
-                <p className="text-black font-bold tracking-wider   p-1 px-2  py-1">
+                <p className="text-black text-lg font-bold tracking-wider pb-3">
                   SKILLS
                 </p>
                 {resume.skills.map((item) => (
                   <div>
-                    <span className="text-base font-semibold ">
+                    <span className="text-lg font-semibold ">
                       <li>
                         {item.name} - {item.level}
                       </li>
@@ -70,7 +70,7 @@ export default function index() {
                   </div>
                 ))}
               </div>
-              <div className="text-base bg-gray-50 pb-2">
+              <div className="text-lg bg-gray-50 pb-2">
                 <p className="text-black font-bold tracking-wider  p-1 px-3 py-1">
                   LANGUAGES
                 </p>
@@ -83,55 +83,37 @@ export default function index() {
                   </div>
                 ))}
               </div>
-              <div className="pt-2 bg-gray-100">
+              <div className="pt-2 pb-2 bg-gray-100">
                 <p className="text-black font-bold tracking-wider  p-1 mx-2 ">
                   AWARDS
                 </p>
                 {resume.awards.map((item) => (
-                  <div className="text-sm pt-4 ml-3">
-                    <li className="font-semibold">
-                      {item.name} - [{item.date}]
-                    </li>
-                    <p>{item.awarder}</p>
+                  <div className="text-lg  ml-3">
+                    <li className="font-semibold">{item.awarder}</li>
+                    <p> [{item.date}] </p>
+                    <p>{item.name}</p>
                     {/* <p>{item.summary.data}</p> */}
                     <p>{item.summary.enabled}</p>
                     <p>{item.enabled}</p>
                   </div>
                 ))}
               </div>
-              <div className="bg-gray-200 pb-3">
-                <p className="text-black font-bold tracking-wider  p-1 px-2 pt-2 ">
-                  WORK
-                </p>
-                {resume.work.map((item) => (
-                  <div className="m-2">
-                    <Link href={item.website}>
-                      <p className=" font-semibold text-base tracking-wider">
-                        {item.company}
-                      </p>
-                    </Link>
-                    <p>
-                      [ {item.from}] - [{item.to}]
-                    </p>
-                    <p>{item.designation}</p>
-                    {/* <p>{item.summary.data}</p> */}
-                    <p>{item.summary.enabled}</p>
-                  </div>
-                ))}
-              </div>
-              <div className=" pt-1 pb-3 bg-gray-300">
+
+              <div className=" pt-1 pb-3 bg-gray-200">
                 <p className="text-black font-bold tracking-wider  p-1 px-2 pt-3   ">
                   PROJECTS
                 </p>
 
                 {resume.projects.map((item) => (
-                  <div className="p-2 text-black ">
-                    <Link href={item.website}>
-                      <p className="font-bold  tracking-wider">{item.name}</p>
-                    </Link>
-                    <p className="ml-3">
-                      {item.from}- {item.to}
+                  <div className=" ml-2 text-black ">
+                    <p className="">
+                      [{item.from}] - [{item.to}]
                     </p>
+                    <Link href={item.website}>
+                      <p className="font-semibold ml-1 tracking-wider">
+                        {item.name}
+                      </p>
+                    </Link>
                     {/* <p>{item.summary.data}</p> */}
                     <p>{item.summary.enabled}</p>
                     <p>{item.enabled}</p>
@@ -141,7 +123,7 @@ export default function index() {
               </div>
             </div>
             <div className="font-col">
-              <div className="p-2 ">
+              <div className="pl-2 ">
                 <p className=" text-black font-bold text-xl tracking-wide  p-3  mt-3 ">
                   EDUCATION
                 </p>
