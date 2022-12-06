@@ -61,7 +61,7 @@ export default function index() {
                   <li className="font-semibold">[{item.date}]</li>
                   <p className="font-bold pl-3">{item.name}</p>
                   <p className="pl-3">{item.awarder}</p>
-                  {/* <p>{item.summary.data}</p> */}
+
                   <p>{item.summary.enabled}</p>
                   <p>{item.enabled}</p>
                 </div>
