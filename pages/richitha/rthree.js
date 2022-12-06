@@ -82,7 +82,7 @@ export default function index() {
                   [ {item.from}] - [{item.to}]
                 </p>
                 <p>{item.designation}</p>
-                {/* <p>{item.summary.data}</p> */}
+
                 <p>{item.summary.enabled}</p>
               </div>
             ))}
@@ -132,7 +132,6 @@ export default function index() {
                     <p className="ml-3 text-white">
                       [{item.from}] - [{item.to}]
                     </p>
-                    {/* <p>{item.summary.data}</p> */}
                     <p>{item.summary.enabled}</p>
                     <p>{item.enabled}</p>
                   </div>
@@ -149,7 +148,6 @@ export default function index() {
                     <p className="font-semibold  text-white">{item.title}</p>
                     <p></p>
                     <p className=" text-white">{item.issuer}</p>
-                    {/* <p>{item.summary.data}</p> */}
                     <p>{item.summary.enabled}</p>
                     <p>{item.enabled}</p>
                   </div>
