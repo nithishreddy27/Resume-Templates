@@ -85,7 +85,7 @@ export default function index() {
                       [ {item.from}] - [{item.to}]
                     </p>
                     <p>{item.designation}</p>
-                    {/* <p>{item.summary.data}</p> */}
+
                     <p>{item.summary.enabled}</p>
                   </div>
                 ))}

@@ -18,7 +18,7 @@ export default function index() {
               RESUME 2
             </Link>
             <p className="bg-white  rounded-md p-5"></p>
-            <Link href="/richitha/rthree" className=" bg-white  p-2">
+            <Link href="/richitha/three" className=" bg-white  p-2">
               RESUME 3
             </Link>
             <p className="bg-white rounded-md p-5"></p>
