@@ -132,7 +132,7 @@ export default function index() {
                     <p className="ml-3 text-white">
                       [{item.from}] - [{item.to}]
                     </p>
-                    {/* <p>{item.summary.data}</p>.. */}
+                    {/* <p>{item.summary.data}</p> */}
                     <p>{item.summary.enabled}</p>
                     <p>{item.enabled}</p>
                   </div>
