@@ -17,10 +17,10 @@ export default function three() {
         <main className={styles.main}>
             <div className="container w-[210mm] h-[297mm] min-w-[210mm] bg-white text-black">
                 <div className='first'>
-                    <div className='w-[150mm] h-[150px] bg-black ml-[60mm] mt-[50px]'>
+                    <div className='w-[150mm] h-[130px] bg-black ml-[60mm] mt-[50px]'>
                         <div className='name text-white bg-black'>
-                            <h1 className='pl-[100px] pt-[20px] text-3xl font-bold text-white bg-black'>{resume.personal.firstName}<span className='pl-4 font-medium text-white bg-black'>{resume.personal.lastName}</span></h1>
-                            <h2 className='text-white pl-[100px] pt-2 text-xl bg-black'>{resume.personal.role}</h2>
+                            <h1 className='pl-[100px] pt-[20px] text-lg font-bold text-white bg-black'>{resume.personal.firstName}<span className='pl-4 font-medium text-white bg-black'>{resume.personal.lastName}</span></h1>
+                            <h2 className='text-white pl-[100px] pt-2 text-base bg-black'>{resume.personal.role}</h2>
                         </div>
                         <div className='pl-16 pt-2'>
                         <div className="social pl-10 pt-1 flex relative">
@@ -48,37 +48,37 @@ export default function three() {
                 <div className='second relative top-[-170px] flex'>
                     <div className='third  w-[320px]'>
                         <div className='contact'>
-                            <div className="dob pl-14 pt-5"><i className='bx bxs-calendar pr-4 text-lg'></i><span className="text-base relative bottom-[3px]">{resume.personal.dob}</span></div>
-                            <div className="phone pl-14 pt-1"><i className='bx bxs-phone pr-4 text-lg'></i><span className="text-base relative bottom-1">{resume.personal.phone}</span></div>
-                            <div className="mail pl-14 pt-1"><i className='bx bxs-envelope pr-4 text-lg'></i><span className="text-base relative bottom-1">{resume.personal.email}</span></div>
+                            <div className="dob pl-14 pt-5"><i className='bx bxs-calendar pr-4 text-lg'></i><span className="text-sm relative bottom-[3px]">{resume.personal.dob}</span></div>
+                            <div className="phone pl-14 pt-1"><i className='bx bxs-phone pr-4 text-lg'></i><span className="text-sm relative bottom-1">{resume.personal.phone}</span></div>
+                            <div className="mail pl-14 pt-1"><i className='bx bxs-envelope pr-4 text-lg'></i><span className="text-sm relative bottom-1">{resume.personal.email}</span></div>
                         </div>
                         <div className='education'>
                         <div className="pb-2">
-                            <h2 className="text-center text-xl font-serif font-semibold pt-3 pb-1 border-b-[4px] mx-6 border-black">E D U C A T I O N</h2>
+                            <h2 className="text-center text-base font-serif font-semibold pt-3 pb-1 border-b-[4px] mx-6 border-black">E D U C A T I O N</h2>
                             {
                                 resume.education.map(item=>(
-                                    <p className="pl-10 pr-5 pt-2"><span className="font-medium">{item.institution}</span> in <span className="font-medium">{item.fieldOfStudy}<br/>({item.startDate} to {item.endDate})</span><br/><i className='bx bxs-graduation'></i> {item.typeOfDegree} in {item.fieldOfStudy} ({item.gpa})</p>
+                                    <p className="pl-10 pr-5 pt-2 text-sm"><span className="font-medium">{item.institution}</span> in <span className="font-medium">{item.fieldOfStudy}<br/>({item.startDate} to {item.endDate})</span><br/><i className='bx bxs-graduation'></i> {item.typeOfDegree} in {item.fieldOfStudy} ({item.gpa})</p>
                                 ))
                             }
                         </div>
                         </div>
                         <div className='certifications'>
                         <div className="pb-2">
-                            <h2 className="text-center text-xl font-serif font-semibold border-b-[4px] mx-6 border-black pt-2 pb-1">C E R T I F I C A T I O N S</h2>
+                            <h2 className="text-center text-base font-serif font-semibold border-b-[4px] mx-6 border-black pt-2 pb-1">C E R T I F I C A T I O N S</h2>
                             {
                                 resume.certifications.map(item=>(
-                                    <p className="pl-10 pr-2 pt-2"><i className='bx bxs-square text-xs pr-3'></i>{item.title} from {item.issuer}</p>
+                                    <p className="pl-10 pr-2 pt-2 text-sm"><i className='bx bxs-square text-xs pr-3'></i>{item.title} from {item.issuer}</p>
                                 ))
                             }
                             </div>
                         </div>
                         <div className='skills'>
                         <div className="pl-5 pb-5">
-                            <h2 className="text-center text-xl font-serif font-semibold pt-1 pb-1 border-b-[4px] mx-1 border-black">S K I L L S</h2>
+                            <h2 className="text-center text-base font-serif font-semibold pt-1 pb-1 border-b-[4px] mx-1 border-black">S K I L L S</h2>
                             <div className='pt-1 pl-3'>
                             {
                                 resume.skills.map(item=>(
-                                    <span className="pr-2">{item.name} </span>
+                                    <span className="pr-2 text-sm">{item.name} </span>
                                 ))
                             }
                             </div>
@@ -87,30 +87,30 @@ export default function three() {
                     </div>
                     <div className='fourth w-[500px]'>
                         <div className='experience'>
-                        <h2 className="text-center text-xl font-serif font-semibold pt-5 border-b-[4px] mx-1 border-black">E X P E R I E N C E</h2>
+                        <h2 className="text-center text-base font-serif font-semibold pt-5 border-b-[4px] mx-1 border-black">E X P E R I E N C E</h2>
                         <div className="pb-1">
                             {
                                 resume.work.map(item=>(
-                                    <p className="pl-10 pr-5 pt-1"><span className="font-medium text-lg pr-3">{item.designation} in {item.company}</span><br></br>({item.from} to {item.to})<br/><Link href={item.website}>{item.website}</Link><br></br><span className='text-xs'>{item.summary.data}</span></p>
+                                    <p className="pl-10 pr-5 pt-1 text-sm"><span className="font-medium  pr-3">{item.designation} in {item.company}</span><br></br>({item.from} to {item.to})<br/><Link href={item.website}>{item.website}</Link><br></br><span className='text-sm'>{item.summary.data}</span></p>
                                 ))
                             }
                         </div>
                         </div>
                         <div className='projects'>
-                        <h2 className="text-center text-xl font-serif font-semibold pt-3 border-b-[4px] mx-1 border-black">P R O J E C T S</h2>
+                        <h2 className="text-center text-base font-serif font-semibold pt-3 border-b-[4px] mx-1 border-black">P R O J E C T S</h2>
                         <div className="pb-2">
                             {
                                 resume.projects.map(item=>(
-                                    <p className="pl-10 pr-5 pt-1"><span className="font-medium text-lg pr-3">{item.name}</span> ({item.from} to {item.to})<br/><Link href={item.website}>{item.website}</Link><br></br><span className='text-xs'>{item.summary.data}</span></p>
+                                    <p className="pl-10 pr-5 text-sm pt-1"><span className="font-medium pr-3">{item.name}</span> ({item.from} to {item.to})<br/><Link href={item.website}>{item.website}</Link><br></br><span className=''>{item.summary.data}</span></p>
                                 ))
                             }
                         </div>
                         </div>
                         <div className='awards'>
-                        <h2 className="text-center text-xl font-serif font-semibold pt-1 border-b-[4px] mx-1 border-black">A W A R D S</h2>
+                        <h2 className="text-center text-base font-serif font-semibold pt-1 border-b-[4px] mx-1 border-black">A W A R D S</h2>
                             {
                                 resume.awards.map(item=>(
-                                    <p className="pl-10 pr-5 pt-1"><i className='bx bxs-award pr-1' ></i><span className="font-medium">{item.name}</span> from {item.awarder}</p>
+                                    <p className="pl-10 pr-5 pt-1 text-sm"><i className='bx bxs-award pr-1' ></i><span className="font-medium">{item.name}</span> from {item.awarder}</p>
                                 ))
                             }
                         </div>
