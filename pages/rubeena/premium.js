@@ -7,7 +7,7 @@ export default function index() {
   return (
     <div>
       <div className="flex align-middle justify-center bg-zinc-400">
-        <div className="container w-[210mm] h-[297mm] bg-white min-w-[210mm] m-10">
+        <div className="container w-[210mm] h-[296mm] bg-white min-w-[210mm]">
           <div className="absolute mt-10 z-10 w-[210mm] flex bg-gradient-to-r from-gray-300 to-slate-50">
             <img
               className="rounded-full ml-10 border-[12px] border-cyan-800 w-48"

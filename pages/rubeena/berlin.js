@@ -7,7 +7,7 @@ export default function index() {
   const resume = demoResume();
   return (
     <div className="flex align-middle justify-center bg-zinc-300">
-      <div className="container w-[210mm] h-[297mm] bg-white p-10 min-w-[210mm] m-10">
+      <div className="container w-[210mm] h-[296mm] bg-white p-10 min-w-[210mm]">
         <div className="h-auto pb-10 border-b-4">
           <div>
             <h1 className="text-4xl font-sans font-semibold">

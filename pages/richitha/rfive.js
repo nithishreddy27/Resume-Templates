@@ -5,15 +5,15 @@ import Link from "next/link";
 export default function index() {
   const resume = demoResume();
   return (
-    <div className="bg-slate-200 p-10">
+    <div className="bg-slate-200 h-[290mm] align-middle justify-center ">
       <div className="  bg-white w-[210mm] h-[297mm] drop-shadow-2xl mx-auto m-2">
-        <div className="flex space-x-4 ">
-          <div className="m-5 w-[120%]">
+        <div className="flex space-x-4 m-4 ">
+          <div className="m-4 w-[120%]">
             <img
-              className="w-[60%] h-[40%] pb-2 "
+              className="w-[75%] h-[40%] pb-2"
               src="https://randomuser.me/api/portraits/women/71.jpg"
             ></img>
-            <span className="  text-xl  bg-white   rounded-sm  text-black tracking-wide   font-semibold ">
+            <span className="  text-xl  bg-white   rounded-sm  text-black tracking-wide  font-semibold ">
               {resume.personal.role}
             </span>
 
@@ -38,16 +38,12 @@ export default function index() {
               ))}
             </div>
           </div>
-          <div className="">
-            <p className="font-bold text-5xl text p-3 pl-2   pb-1 font-sans tracking-wider text-left">
-              {resume.personal.firstName}
+          <div className=" m-7 ">
+            <p className="font-bold text-6xl text p-3 pl-2   pb-1 font-sans tracking-wider text-left">
+              {resume.personal.firstName} {resume.personal.lastName}
             </p>
-            <p className="font-bold text-5xl text p-3 pl-2   pb-1 font-sans tracking-wider text-left">
-              {" "}
-              {resume.personal.lastName}
-            </p>
-            <div className=" bg-gray-200 rounded-xl m-3">
-              <p className=" text-black font-bold text-xl p-1 pt-2 pl-4 tracking-wid mt-3 ">
+            <div className=" bg-gray-200 rounded-xl m-3 ml-[10%]">
+              <p className=" text-black font-bold text-xl p-2 pt-2 pl-4 tracking-wid mt-5 ">
                 PROFILE
               </p>
 
@@ -58,7 +54,7 @@ export default function index() {
           </div>
         </div>
         <hr className="border-1"></hr>
-        <div className="flex space-x-4 m-2">
+        <div className="flex space-x-4 m-4">
           <div flex-col>
             <div className="b-[50%] rounded-md  p-2">
               <p className="font-bold  m-2 ">EDUCATION</p>
@@ -89,14 +85,14 @@ export default function index() {
                       [ {item.from}] - [{item.to}]
                     </p>
                     <p>{item.designation}</p>
-                    {/* <p>{item.summary.data}</p> */}
+
                     <p>{item.summary.enabled}</p>
                   </div>
                 ))}
               </div>
               <div className="pt-2">
                 <p className="text-black font-bold tracking-wider  p-1 mx-2 ">
-                  AWARDS
+                  AWARDS:
                 </p>
                 {resume.awards.map((item) => (
                   <div className="text-sm pt-4 ml-3">
@@ -112,8 +108,8 @@ export default function index() {
               </div>
             </div>
           </div>
-          <div className="flex-col">
-            <div className=" pt-1 pb-3 bg-gray-200 rounded-xl p-2 mt-5 mr-9">
+          <div className="flex-col ">
+            <div className=" pt-1 pb-3 bg-gray-200 rounded-xl p-2 mt-5 mr-5">
               <p className="text-black font-bold tracking-wider  p-2 px-2 pt-3   ">
                 PROJECTS
               </p>
@@ -140,9 +136,8 @@ export default function index() {
 
               {resume.certifications.map((item) => (
                 <div className="pt-4 text-black mx-3 ">
-                  <p className="font-semibold">
-                    {item.title} [{item.date}]
-                  </p>
+                  <p className="font-semibold">{item.title} </p>
+                  <p>[{item.date}]</p>
                   <p></p>
                   <p>{item.issuer}</p>
                   {/* <p>{item.summary.data}</p> */}
@@ -151,7 +146,7 @@ export default function index() {
                 </div>
               ))}
             </div>
-            <div className="flex mt-4 bg-gray-200 rounded-xl">
+            <div className="flex mt-4 m-4 bg-gray-200 rounded-xl">
               {resume.social.map((item) => (
                 <div className="mx-3 pb-4  mt-3 ">
                   <span className="">
