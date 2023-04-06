@@ -5,155 +5,259 @@ import Link from "next/link";
 export default function index() {
   const resume = demoResume();
   return (
-    <div className="bg-slate-200 h-[290mm]">
-      <div className="bg-white  w-[210mm] h-[297mm] drop-shadow-2xl mx-auto">
-        <div className="bg-white p-2 flex space-x-5">
-          <div className="flex-col w-[100%]">
-            <div className="m-3">
-              <img
-                className="w-[110%] h-[130%]"
-                src="https://randomuser.me/api/portraits/women/71.jpg"
-              ></img>
-            </div>
-            <div className="flex">
-              {resume.social.map((item) => (
-                <div className="mx-3 ml-5 pb-4  mt-3 ">
-                  <span>
-                    <Link href={item.url}>
-                      <img
-                        src={"https://www." + item.network + ".com/favicon.ico"}
-                        className="w-5 "
-                      />
-                    </Link>
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="flex-col mt-2 ml-3">
-            <div className="">
-              <p className=" text-black font-bold text-xl p-1 pt-2 pl-4 tracking-wide  mt-3 ">
+    <div className="bg-gray-300  h-[290mm]">
+      <div className="bg-slate-50 w-[210mm] h-[297mm] mx-auto   ">
+        <div className="">
+          <div className="flex mx-2 mt-[2%]  ">
+            <img
+              className="h-[38mm] p-1  m-2"
+              src="https://randomuser.me/api/portraits/women/71.jpg"
+            ></img>
+
+            <div className="right-0 w-full">
+              <p className=" text-black font-bold text-[16px] p-1 pt-3 pl-4 tracking-wide mt-1 heading ">
                 PROFILE
               </p>
-
-              <p className="text-sm text-black p-3 pl-2 pt-2">
+              <p className="text-[12px] text-black p-2 pl-2 pt-1">
                 {resume.objective}
               </p>
             </div>
           </div>
-        </div>
-        <div className="">
-          <div>
-            <div className="flex-col bg-black pt-3 pb-2">
-              <span className="  text-3xl  bg-white p-1 pl-2 rounded-sm  text-black tracking-wider font-thin  ml-2">
-                {resume.personal.role}
-              </span>
-              <span className=" text-5xl pl-[10%] text-white tracking-wide text-right font-serif ">
-                {resume.personal.firstName} {resume.personal.lastName}
-              </span>
-            </div>
+          <div className=" bg-black px-4 py-1">
+            <span className="text-[16px] bg-white p-1 pl-2 rounded-sm  text-black tracking-wider font-thin  ml-2">
+              {resume.personal.role}
+            </span>
+            <span className=" text-[18px] pl-[10%] text-white tracking-wide text-right font-serif ">
+              {resume.personal.firstName} {resume.personal.lastName}
+            </span>
           </div>
-          <div className="flex  text-lg m-4">
-            <div className="font-col bg-gray-200">
-              <div className="p-2  bg-gray-50">
-                <p className="text-black text-lg font-bold tracking-wider pb-3">
-                  SKILLS
-                </p>
-                {resume.skills.map((item) => (
-                  <div>
-                    <span className="text-lg font-semibold ">
-                      <li>
-                        {item.name} - {item.level}
-                      </li>
-                    </span>
-                    <p>{item.enabled}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="text-lg bg-gray-50 pb-2">
-                <p className="text-black font-bold tracking-wider  p-1 px-3 py-1">
-                  LANGUAGES
-                </p>
-                {resume.languages.map((item) => (
-                  <div>
-                    <p className="pl-6">
-                      {item.name} : {item.fluency}
-                    </p>
-                    <p>{item.enabled}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="pt-2 pb-2 bg-gray-100">
-                <p className="text-black font-bold tracking-wider  p-1 mx-2 ">
-                  AWARDS
-                </p>
-                {resume.awards.map((item) => (
-                  <div className="text-lg  ml-3">
-                    <li className="font-semibold">{item.awarder}</li>
-                    <p> [{item.date}] </p>
-                    <p>{item.name}</p>
-                    {/* <p>{item.summary.data}</p> */}
-                    <p>{item.summary.enabled}</p>
-                    <p>{item.enabled}</p>
-                  </div>
-                ))}
-              </div>
 
-              <div className=" pt-1 pb-3 bg-gray-200">
-                <p className="text-black font-bold tracking-wider  p-1 px-2 pt-3   ">
+          <div className="relative flex">
+            <div className="bg-gradient-to-t   from-gray-300 w-[40%]">
+              <div className=" ">
+                <div className="flex px-3 py-1">
+                  <div className="">
+                    {resume.skills.length != 0 && (
+                      <div className="py-1">
+                        <p className="text-black px-2 font-bold tracking-wider text-[16px] heading">
+                          SKILLS
+                        </p>
+                        {resume.skills.map((item) => (
+                          <div key={item.name} className="ml-2">
+                            <span className="text-[12px]  ">
+                              <li>
+                                {item.name} - {item.level}
+                              </li>
+                            </span>
+                            <p>{item.enabled}</p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                    {/* Languages */}
+                    {resume.languages.length != 0 && (
+                      <div className="py-1">
+                        <p className="text-black px-2 font-bold tracking-wider text-[16px] heading">
+                          LANGUAGES
+                        </p>
+                        {resume.languages.map((item) => (
+                          <div key={item.name} className="ml-2">
+                            <li className="text-[12px]">
+                              {item.name} : {item.fluency}
+                            </li>
+                            <p>{item.enabled}</p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                    {/* awards */}
+                    {resume.awards.length != 0 && (
+                      <div className="py-1">
+                        <p className="text-black px-2 font-bold tracking-wider text-[16px] heading">
+                          AWARDS
+                        </p>
+                        {resume.awards.map((item) => (
+                          <div key={item.name} className="ml-2">
+                            <li className="">
+                              <span className="text-[14px] font-semibold">
+                                {" "}
+                                {item.name}
+                              </span>
+                              <div className="pl-5">
+                                <p className="relative  text-[14px]">
+                                  {item.awarder}
+                                  <span className="absolute right-0">
+                                    {" "}
+                                    [{item.date}]{" "}
+                                  </span>
+                                </p>
+                                <p className="text-[12px] ">
+                                  {item.summary.data}
+                                </p>
+                                <p className="text-[12px]">
+                                  {item.summary.enabled}
+                                </p>
+                                <p>{item.enabled}</p>
+                              </div>
+                            </li>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {/* hobbies */}
+                    {resume.hobbies.length != 0 && (
+                      <div className="py-1">
+                        <p className="text-black  px-2 font-bold tracking-wider text-[16px]  heading">
+                          HOBBIES
+                        </p>
+                        {resume.hobbies.map((item) => (
+                          <div className="ml-2" key={item.name}>
+                            <li className="text-[12px]">{item.name}</li>
+                            <p>{item.enabled}</p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {/* projects */}
+                    {resume.projects.length != 0 && (
+                      <div className=" py-1">
+                        <p className="text-black  px-2 font-bold tracking-wider text-[16px]  heading  ">
+                          PROJECTS
+                        </p>
+
+                        {resume.projects.map((item) => (
+                          <div key={item.name} className="py-1">
+                            <div className=" ml-2 text-black ">
+                              <p className="tracking-wide text-[14px] font-semibold">
+                                {item.name}
+                              </p>
+                              <p className="text-[12px]">
+                                [{item.from}] - [{item.to}]
+                              </p>
+
+                              <Link href={item.website}>
+                                <p className="text-[12px]">{item.website}</p>
+                              </Link>
+                              <p className="pr-2 text-sm  ">
+                                {item.summary.data}
+                              </p>
+                              <p>{item.summary.enabled}</p>
+                              <p>{item.enabled}</p>
+                              <p className="p-2"> </p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-[70%] py-2 px-3">
+              {/* education */}
+              {resume.education.length != 0 && (
+                <div className="py-1 ">
+                  <p className=" text-black font-bold px-3 py-1 text-[16px] tracking-wide  heading">
+                    EDUCATION
+                  </p>
+                  <hr></hr>
+                  {resume.education.map((item) => (
+                    <div
+                      key={item.institution}
+                      className="text-[12px] p-2 text-black "
+                    >
+                      <p className="relative text-[14px] font-semibold text-black ">
+                        {item.institution}
+                        <span className="absolute font-normal text-[12px] right-3">
+                          [{item.startDate}] - [{item.endDate}]
+                        </span>
+                      </p>
+                      <p>{item.typeOfDegree}</p>
+                      <p>
+                        {item.fieldOfStudy} - {item.gpa}
+                      </p>
+                      <p>{item.summary.enabled}</p>
+                      <p>{item.enabled}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {resume.work.length != 0 && (
+                <div className="py-1">
+                  <p className=" text-black font-bold px-3 py-1 text-[16px] tracking-wide heading">
+                    INTERNSHIP
+                  </p>
+                  <hr></hr>
+                  {resume.work.map((item) => (
+                    <div
+                      key={item.company}
+                      className="text-[12px] p-2 text-black "
+                    >
+                      <p className="relative font-semibold text-[14px] text-black ">
+                        {item.company}
+                        <span className="absolute font-normal text-[12px] right-0">
+                          [{item.from}] - [{item.to}]
+                        </span>
+                      </p>
+                      <p>{item.designation}</p>
+                      <p>{item.summary.data}</p>
+                      {/* <p>{item.gpa}</p> */}
+                      <p>{item.summary.enabled}</p>
+                      <p>{item.enabled}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {resume.certifications.length != 0 && (
+                <div className="py-1">
+                  <p className=" text-black font-bold px-3 py-1 text-[16px] tracking-wider heading">
+                    CERTIFICATION
+                  </p>
+                  <hr className=""></hr>
+                  {resume.certifications.map((item) => (
+                    <div
+                      key={item.title}
+                      className="text-[12px] p-2 text-black"
+                    >
+                      <p className="relative font-semibold text-[14px]">
+                        {item.title}{" "}
+                        <span className="right-0 absolute font-normal text-[10px]">
+                          [{item.date}]
+                        </span>
+                      </p>
+
+                      <p>{item.issuer}</p>
+                      <p>{item.summary.data}</p>
+                      <p>{item.summary.enabled}</p>
+                      <p>{item.enabled}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              <div className="py-1">
+                <p className="text-black font-bold tracking-wider  px-3 py-1 text-[16px]   ">
                   PROJECTS
                 </p>
-
+                <hr></hr>
                 {resume.projects.map((item) => (
-                  <div className=" ml-2 text-black ">
-                    <p className="">
-                      [{item.from}] - [{item.to}]
+                  <div className="text-[12px] p-2 text-black">
+                    <p className="relative font-semibold text-[14px]">
+                      {item.name}
+                      <span className="absolute right-0 font-normal text-[10px]">
+                        {" "}
+                        [{item.from}] - [{item.to}]
+                      </span>
                     </p>
                     <Link href={item.website}>
-                      <p className="font-semibold ml-1 tracking-wider">
-                        {item.name}
-                      </p>
+                      <p className="text-[12px]">{item.name}</p>
+                      <p className="text-[12px]">{item.summary.data}</p>
                     </Link>
-                    {/* <p>{item.summary.data}</p> */}
-                    <p>{item.summary.enabled}</p>
-                    <p>{item.enabled}</p>
-                    <p className="p-2"> </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="font-col">
-              <div className="pl-2 ">
-                <p className=" text-black font-bold text-xl tracking-wide  p-3  mt-3 ">
-                  EDUCATION
-                </p>
-                <hr></hr>
-                {resume.education.map((item) => (
-                  <div className="text-base p-2 text-black ">
-                    <p className="font-semibold text-black ">
-                      {item.institution} [{item.startDate} - {item.endDate}]
-                    </p>
-                    <p>{item.fieldOfStudy}</p>
-                    <p>{item.typeOfDegree}</p>
-                    <p>{item.gpa}</p>
-                    <p>{item.summary.enabled}</p>
-                    <p>{item.enabled}</p>
-                  </div>
-                ))}
-              </div>
-              <div>
-                <p className=" text-black font-bold text-xl tracking-wide ml-3 p-1  mt-2 ">
-                  CERTIFICATION
-                </p>
-                <hr className="m-3"></hr>
-                {resume.certifications.map((item) => (
-                  <div className="pt-4 text-black mx-3 ">
-                    <p className="font-semibold">
-                      {item.title} [{item.date}]
-                    </p>
-                    <p></p>
-                    <p>{item.issuer}</p>
-                    {/* <p>{item.summary.data}</p> */}
+
                     <p>{item.summary.enabled}</p>
                     <p>{item.enabled}</p>
                   </div>

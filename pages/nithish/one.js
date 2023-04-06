@@ -13,27 +13,6 @@ export default function one() {
           </h1>
           <h1 className="mt-3">{resume.personal.role}</h1>  
 
-<<<<<<< HEAD
-          <div className="mt-5 mb-4 flex  justify-center align-middle">
-            {resume.social.map((item) => (
-              <div className="mx-5 mt-1">
-                <span className="">
-                  <Link href={item.url}>
-                    <img
-                      src={"https://www." + item.network + ".com/favicon.ico"}
-                      className="w-5 grayscale-[40%] "
-                    />
-                  </Link>
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="w-[40%] bg-gray-200">
-          <div className="mt-56 mx-10 flex flex-col">
-            <h4 className="font-bold tracking-[4px]">EDUCATION</h4>
-            <hr className="w-[100%] h-1 bg-black my-2" />
-=======
 
           <div className="mt-2 mb-4 flex  justify-center align-middle">
             {
@@ -49,7 +28,6 @@ export default function one() {
         <div className="mt-52 mx-10 flex flex-col">
                 <h4 className="font-bold tracking-[4px]">EDUCATION</h4>
                 <hr className="w-[100%] h-1 bg-black my-2"/>
->>>>>>> 18cc8ec78e2881a07cdf37bf118ae2147b6debc1
 
             {resume.education.map((item) => (
               <div className="flex flex-col">
